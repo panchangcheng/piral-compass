@@ -1,6 +1,11 @@
 # piral-compass
 micro frontends compass
 
+install piral-cli
+```shell script
+npm -g install piral-cli
+```
+
 run compass
 ```shell script
 sudo ./run.sh
