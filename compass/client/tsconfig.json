@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "baseUrl": "../",
+    "rootDir": "../",
+    "outDir": "../lib",
+    "jsx": "preserve",
+    "target": "es2015",
+    "lib": ["esnext", "dom", "dom.iterable"],
+    "types" : ["node", "lodash"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "traceResolution": false,
+    "declaration": true
+  },
+  "include": [
+    "../client",
+    "../server"
+  ],
+  "exclude": [
+    "node_modules",
+    "../test",
+    "**/__tests__"
+  ]
+}

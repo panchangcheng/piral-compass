@@ -1,0 +1,17 @@
+@import "~compass-base/client/components/workloads-mixins";
+
+.Jobs {
+  .TableCell {
+    &.name {
+      flex-grow: 2;
+    }
+
+    &.warning {
+      @include table-cell-warning;
+    }
+
+    &.conditions {
+      @include job-condition-colors;
+    }
+  }
+}
