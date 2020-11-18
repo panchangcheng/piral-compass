@@ -1,0 +1,15 @@
+{
+  "name": "piral-compass-confirm-dialog",
+  "version": "0.0.1",
+  "main": "src/index.ts",
+  "typings": "src/index.ts",
+  "license": "MIT",
+  "dependencies": {
+    "mobx": "^6.0.4",
+    "mobx-react": "^7.0.5",
+    "piral-compass-button": "file:../button",
+    "piral-compass-icon": "file:../icon",
+    "piral-compass-utils": "file:../utils",
+    "react": "^17.0.1"
+  }
+}

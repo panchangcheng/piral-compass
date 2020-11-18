@@ -10,6 +10,8 @@
     "@material-ui/lab": "^4.0.0-alpha.56",
     "compass-base": "0.1.18",
     "piral": "0.12.3",
+    "piral-compass-themes": "../basis/themes/piral-compass-themes-v0.0.1.tgz",
+    "piral-compass-utils": "../basis/utils/piral-compass-utils-v0.0.1.tgz",
     "piral-menu": "^0.12.3",
     "qs": "^6.9.4"
   },
@@ -20,7 +22,9 @@
   },
   "app": "./src/index.html",
   "pilets": {
-    "files": [],
+    "files": [
+      "./tsconfig.json"
+    ],
     "externals": [],
     "scripts": {},
     "validators": {},

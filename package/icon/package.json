@@ -1,0 +1,15 @@
+{
+  "name": "piral-compass-icon",
+  "version": "0.0.1",
+  "main": "index.ts",
+  "license": "MIT",
+  "dependencies": {
+    "mobx": "^6.0.4",
+    "mobx-react": "^7.0.5",
+    "piral-compass-tooltip": "file:../tooltip",
+    "piral-compass-utils": "file:../utils",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0"
+  }
+}

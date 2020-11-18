@@ -1,0 +1,24 @@
+{
+  "name": "piral-compass-dock",
+  "version": "0.0.1",
+  "typings": "src/index.ts",
+  "license": "MIT",
+  "files": [
+    "src"
+  ],
+  "dependencies": {
+    "compass-base": "^0.1.18",
+    "crypto-js": "^4.0.0",
+    "js-yaml": "^3.14.0",
+    "lodash": "^4.17.20",
+    "mobx": "^6.0.3",
+    "mobx-react": "^7.0.4",
+    "piral-core": "^0.12.3",
+    "react": "^17.0.1",
+    "store": "^2.0.12",
+    "xterm": "^4.9.0",
+    "xterm-addon-fit": "^0.4.0",
+    "xterm-addon-serialize": "^0.4.0",
+    "xterm-addon-web-links": "^0.4.0"
+  }
+}

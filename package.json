@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "piral-instance-webpack-plugin": "^0.6.3"
+    "piral-compass-utils": "../basis/utils/piral-compass-utils-v0.0.1.tgz",
+    "piral-instance-webpack-plugin": "^0.6.3",
+    "react": "^17.0.1"
   }
 }

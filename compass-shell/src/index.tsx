@@ -2,15 +2,14 @@ import * as React from 'react';
 import 'piral/polyfills';
 import { renderInstance } from 'piral';
 import { layout, errors } from './layout';
-import { themeStore } from "compass-base/client/theme.store";
+import { themeStore } from "piral-compass-themes";
 import "compass-base/client/components/app.scss";
 import { render } from 'react-dom';
 import {LoginComponent} from './+login'
 import {configStore} from "compass-base/client/config.store";
-
+import {} from "piral-compass-dock"
 // change to your feed URL here (either using feed.piral.cloud or your own service)
 themeStore.setTheme('kontena-light');
-
 
 if (location.pathname === '/login') {
   render(
@@ -18,7 +17,6 @@ if (location.pathname === '/login') {
     document.querySelector('#app'),
   );
 }else {
-  console.log(configStore.config.clusterName)
   const piral = renderInstance({
     layout,
     errors,

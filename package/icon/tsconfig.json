@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "declaration": true,
+    "target": "es2015",
+    "sourceMap": true,
+    "outDir": "./lib",
+    "skipLibCheck": true,
+    "lib": ["dom", "es2018"],
+    "moduleResolution": "node",
+    "module": "esnext",
+    "jsx": "react",
+    "importHelpers": true,
+    "esModuleInterop": true
+  },
+}
+

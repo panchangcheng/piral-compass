@@ -1,0 +1,14 @@
+{
+  "name": "piral-compass-checkbox",
+  "version": "0.0.1",
+  "main": "src/index.ts",
+  "typings": "src/index.ts",
+  "license": "MIT",
+  "dependencies": {
+    "@types/react": "^16.9.56",
+    "mobx": "^6.0.4",
+    "mobx-react": "^7.0.5",
+    "piral-compass-utils": "file:../utils",
+    "react": "^17.0.1"
+  }
+}

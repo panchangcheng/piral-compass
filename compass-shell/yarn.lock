@@ -8231,7 +8231,12 @@ mobx@^5.15.4, mobx@^5.15.5:
   resolved "https://registry.npmjs.org/mobx/-/mobx-5.15.7.tgz#b9a5f2b6251f5d96980d13c78e9b5d8d4ce22665"
   integrity sha512-wyM3FghTkhmC+hQjyPGGFdpehrcX1KOXsDuERhfK2YbJemkUhEB+6wzEN639T21onxlfYBmriA1PFnvxTUhcKw==
 
-moment@^2.10.2, moment@^2.28.0:
+mobx@^6.0.3:
+  version "6.0.3"
+  resolved "https://registry.npmjs.org/mobx/-/mobx-6.0.3.tgz#cec784bb41acf9eb87b449f1181c9dd8c77ccc0b"
+  integrity sha512-DBMd0NXsMn25HJMUAWBndgJ2wRjOJPbpn6wdzUvZW0PVsyTnrw028XwQfzsjnxnKG+bAXGVNb38rvd+1o0G9uQ==
+
+moment@^2.10.2, moment@^2.28.0, moment@^2.29.1:
   version "2.29.1"
   resolved "https://registry.npmjs.org/moment/-/moment-2.29.1.tgz#b2be769fa31940be9eeea6469c075e35006fa3d3"
   integrity sha512-kHmoybcPV8Sqy59DwNDY3Jefr64lK/by/da0ViFcuA4DH0vQg5Q6Ze5VimxkfQNSC+Mls/Kx53s7TjP1RhFEDQ==
@@ -9158,6 +9163,34 @@ piral-cli@^0.12.0, piral-cli@^0.12.3:
     typescript "^4.0.2"
     yargs "^15.4.1"
 
+piral-compass-themes@../basis/themes/piral-compass-themes-v0.0.1.tgz:
+  version "0.0.1"
+  resolved "../basis/themes/piral-compass-themes-v0.0.1.tgz#9a5d4e9b43bfa3368c7ffef99eabc7282a69c4ca"
+  dependencies:
+    mobx "^6.0.3"
+    piral-compass-utils "../utils/piral-compass-utils-v0.0.1.tgz"
+    tslib "^2.0.3"
+    typescript "^3.9.7"
+
+piral-compass-utils@../basis/utils/piral-compass-utils-v0.0.1.tgz:
+  version "0.0.1"
+  resolved "../basis/utils/piral-compass-utils-v0.0.1.tgz#5257644a3d4bc71f066124c80c3eb5a498c22bff"
+  dependencies:
+    crypto-js "^4.0.0"
+    lodash "^4.17.20"
+    moment "^2.29.1"
+    react "^17.0.1"
+    tslib "^2.0.3"
+
+piral-compass-utils@../utils/piral-compass-utils-v0.0.1.tgz:
+  version "0.0.1"
+  resolved "../utils/piral-compass-utils-v0.0.1.tgz#3e5f7fc9e3450cffbe68e9e5828cfac85ff2ba2e"
+  dependencies:
+    crypto-js "^4.0.0"
+    lodash "^4.17.20"
+    moment "^2.29.1"
+    react "^17.0.1"
+
 piral-core@^0.12.3:
   version "0.12.3"
   resolved "https://registry.npmjs.org/piral-core/-/piral-core-0.12.3.tgz#f0bcbe82f89a1bbdcf4a7ec8b548a87995e9e522"
@@ -10082,6 +10115,14 @@ react@16.14.0, react@^16.11.0, react@^16.8.1:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
     prop-types "^15.6.2"
+
+react@^17.0.1:
+  version "17.0.1"
+  resolved "https://registry.npmjs.org/react/-/react-17.0.1.tgz#6e0600416bd57574e3f86d92edba3d9008726127"
+  integrity sha512-lG9c9UuMHdcAexXtigOZLX8exLWkW0Ku29qPRU8uhF2R9BN96dLCt0psvzPLlHc5OWkgymP3qwTRgbnw5BKx3w==
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
 
 read-pkg-up@^1.0.1:
   version "1.0.1"
@@ -11700,7 +11741,7 @@ tslib@1.14.1, tslib@^1.10.0, tslib@^1.9.0, tslib@^1.9.3:
   resolved "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
 
-tslib@^2.0.0:
+tslib@^2.0.0, tslib@^2.0.3:
   version "2.0.3"
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.0.3.tgz#8e0741ac45fc0c226e58a17bfc3e64b9bc6ca61c"
   integrity sha512-uZtkfKblCEQtZKBF6EBXVZeQNl82yqtDQdv+eck8u7tdPxjLu2/lp5/uPW+um2tpuxINHWy3GhiccY7QgEaVHQ==

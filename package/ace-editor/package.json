@@ -1,0 +1,19 @@
+{
+  "name": "piral-compass-ace-editor",
+  "version": "0.0.1",
+  "main": "/src/index.ts",
+  "typings": "/src/index.ts",
+  "files": [
+    "src"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@types/react": "^16.9.56",
+    "ace-builds": "^1.4.12",
+    "mobx": "^6.0.3",
+    "mobx-react": "^7.0.4",
+    "piral-compass-themes": "file:../themes",
+    "piral-compass-utils": "file:../utils",
+    "react": "^17.0.1"
+  }
+}
