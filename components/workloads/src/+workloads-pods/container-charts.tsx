@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
-import { IPodMetrics } from "compass-base/client/api/endpoints";
-import { BarChart, cpuOptions, memoryOptions } from "compass-base/client/components/chart";
-import { isMetricsEmpty, normalizeMetrics } from "compass-base/client/api/endpoints/metrics.api";
-import { NoMetrics } from "compass-base/client/components/resource-metrics/no-metrics";
-import { IResourceMetricsValue, ResourceMetricsContext } from "compass-base/client/components/resource-metrics";
-import { themeStore } from "compass-base/client/theme.store";
+import { IPodMetrics } from "@pskishere/piral-compass-api";
+import { BarChart, cpuOptions, memoryOptions } from "@pskishere/piral-compass-chart";
+// import { isMetricsEmpty, normalizeMetrics } from "compass-base/client/api/endpoints/metrics.api";
+// import { NoMetrics } from "compass-base/client/components/resource-metrics/no-metrics";
+// import { IResourceMetricsValue, ResourceMetricsContext } from "compass-base/client/components/resource-metrics";
+import { themeStore } from "@pskishere/piral-compass-themes";
 
 type IContext = IResourceMetricsValue<any, { metrics: IPodMetrics }>;
 
@@ -13,7 +13,7 @@ export const ContainerCharts = () => {
   const { chartCapacityColor } = themeStore.activeTheme.colors;
 
   if (!metrics) return null;
-  if (isMetricsEmpty(metrics)) return <NoMetrics/>;
+  // if (isMetricsEmpty(metrics)) return <NoMetrics/>;
 
   const values = Object.values(metrics).map(metric =>
     normalizeMetrics(metric).data.result[0].values

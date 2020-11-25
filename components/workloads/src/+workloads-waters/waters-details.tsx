@@ -3,19 +3,17 @@ import "./waters-details.scss";
 import React from "react";
 import { disposeOnUnmount, observer } from "mobx-react";
 import { reaction } from "mobx";
-import { Badge } from "compass-base/client/components/badge";
-import { DrawerItem } from "compass-base/client/components/drawer";
+import { Badge } from "@pskishere/piral-compass-badge";
+import { DrawerItem } from "@pskishere/piral-compass-drawer";
 import { PodDetailsStatuses } from "../+workloads-pods/pod-details-statuses";
 import { KubeEventDetails } from "compass-base/client/components/+events/kube-event-details";
 import { podsStore } from "../+workloads-pods/pods.store";
 import { waterStore } from "./waters.store";
-import { KubeObjectDetailsProps } from "compass-base/client/components/kube-object";
-import { Water, waterApi } from "compass-base/client/api/endpoints";
+import { KubeObjectDetailsProps, KubeObjectMeta } from "@pskishere/piral-compass-kube-layout";
+import { Water, waterApi, apiManager } from "@pskishere/piral-compass-api";
 import { ResourceMetrics, ResourceMetricsText } from "compass-base/client/components/resource-metrics";
 import { PodCharts, podMetricTabs } from "../+workloads-pods/pod-charts";
 import { PodDetailsList } from "../+workloads-pods/pod-details-list";
-import { apiManager } from "compass-base/client/api/api-manager";
-import { KubeObjectMeta } from "compass-base/client/components/kube-object/kube-object-meta";
 
 interface Props extends KubeObjectDetailsProps<Water> {
 }

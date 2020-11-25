@@ -2,7 +2,7 @@ import "./pod-details-statuses.scss";
 import * as React from "react";
 import countBy from "lodash/countBy";
 import kebabCase from "lodash/kebabCase";
-import { Pod } from "compass-base/client/api/endpoints";
+import { Pod } from "@pskishere/piral-compass-api";
 
 interface Props {
   pods: Pod[];

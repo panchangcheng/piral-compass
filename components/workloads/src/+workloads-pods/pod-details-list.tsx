@@ -2,18 +2,16 @@ import "./pod-details-list.scss";
 
 import React from "react";
 import kebabCase from "lodash/kebabCase";
+import { reaction } from "mobx";
 import { disposeOnUnmount, observer } from "mobx-react";
 import { podsStore } from "./pods.store";
-import { Pod } from "compass-base/client/api/endpoints";
-import { autobind, bytesToUnits, cssNames, interval, prevDefault } from "compass-base/client/utils";
+import { Pod, KubeObject } from "@pskishere/piral-compass-api";
+import { autobind, bytesToUnits, cssNames, interval, prevDefault, showDetails } from "@pskishere/piral-compass-utils";
 import { KubeEventIcon } from "compass-base/client/components/+events/kube-event-icon";
-import { LineProgress } from "compass-base/client/components/line-progress";
-import { KubeObject } from "compass-base/client/api/kube-object";
-import { Table, TableCell, TableHead, TableRow } from "compass-base/client/components/table";
-import { showDetails } from "compass-base/client/navigation";
-import { reaction } from "mobx";
-import { Spinner } from "compass-base/client/components/spinner";
-import { DrawerTitle } from "compass-base/client/components/drawer";
+import { LineProgress } from "@pskishere/piral-compass-line-progress";
+import { Table, TableCell, TableHead, TableRow } from "@pskishere/piral-compass-kube-layout";
+import { Spinner } from "@pskishere/piral-compass-spinner";
+import { DrawerTitle } from "@pskishere/piral-compass-drawer";
 
 enum sortBy {
   name = "name",

@@ -1,10 +1,10 @@
-import {Pod} from "compass-base/client/api/endpoints";
-import React, {Fragment} from "react";
-import {TooltipContent} from "compass-base/client/components/tooltip";
 import toPairs from "lodash/toPairs";
 import startCase from "lodash/startCase";
-import {StatusBrick} from "compass-base/client/components/status-brick";
-import {cssNames} from "compass-base/client/utils";
+import React, {Fragment} from "react";
+import {Pod} from "@pskishere/piral-compass-api";
+import {TooltipContent} from "@pskishere/piral-compass-tooltip";
+import {StatusBrick} from "@pskishere/piral-compass-status-brick";
+import {cssNames} from "@pskishere/piral-compass-utils";
 
 export interface PodContainerStatusesProps {
   pod: Pod

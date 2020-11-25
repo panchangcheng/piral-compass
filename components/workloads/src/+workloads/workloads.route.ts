@@ -1,6 +1,6 @@
 import {RouteProps} from "react-router"
+import {buildURL, IURLParams} from "@pskishere/piral-compass-utils";
 import {Workloads} from "./workloads";
-import {buildURL, IURLParams} from "compass-base/client/navigation";
 
 export const workloadsRoute: RouteProps = {
   get path() {

@@ -2,17 +2,15 @@ import "./jobs.scss";
 
 import React from "react";
 import {observer} from "mobx-react";
-import {podsStore} from "../+workloads-pods/pods.store";
-import {jobStore} from "./job.store";
-import {eventStore} from "compass-base/client/components/+events/event.store";
-import {Job, jobApi} from "compass-base/client/api/endpoints/job.api";
-import {KubeObjectMenu, KubeObjectMenuProps} from "compass-base/client/components/kube-object/kube-object-menu";
-import {KubeObjectListLayout} from "compass-base/client/components/kube-object";
-import {KubeEventIcon} from "compass-base/client/components/+events/kube-event-icon";
 import kebabCase from "lodash/kebabCase";
-import {apiManager} from "compass-base/client/api/api-manager";
+import {podsStore} from "../+workloads-pods/pods.store";
+// import {eventStore} from "compass-base/client/components/+events/event.store";
+import {Job, jobApi, apiManager} from "@pskishere/piral-compass-api";
+import {KubeObjectMenu, KubeObjectMenuProps, KubeObjectListLayout} from "@pskishere/piral-compass-kube-layout";
+// import {KubeEventIcon} from "compass-base/client/components/+events/kube-event-icon";
 import {PageComponentProps} from "compass-shell";
 import {JobDetails} from "./job-details";
+import {jobStore} from "./job.store";
 
 enum sortBy {
   name = "name",
@@ -30,7 +28,7 @@ export class Jobs extends React.Component<PageComponentProps, any> {
       <KubeObjectListLayout
         className="Jobs"
         store={jobStore}
-        dependentStores={[podsStore, eventStore]}
+        dependentStores={[podsStore,]}
         sortingCallbacks={{
           [sortBy.name]: (job: Job) => job.getName(),
           [sortBy.namespace]: (job: Job) => job.getNs(),
@@ -45,7 +43,7 @@ export class Jobs extends React.Component<PageComponentProps, any> {
           {title: `Name`, className: "name", sortBy: sortBy.name},
           {title: `Namespace`, className: "namespace", sortBy: sortBy.namespace},
           {title: `Completions`, className: "completions"},
-          {className: "warning"},
+          // {className: "warning"},
           {title: `Age`, className: "age", sortBy: sortBy.age},
           {title: `Conditions`, className: "conditions", sortBy: sortBy.conditions},
         ]}
@@ -55,7 +53,7 @@ export class Jobs extends React.Component<PageComponentProps, any> {
             job.getName(),
             job.getNs(),
             `${job.getCompletions()} / ${job.getDesiredCompletions()}`,
-            <KubeEventIcon object={job}/>,
+            // <KubeEventIcon object={job}/>,
             job.getAge(),
             condition && {
               title: condition.type,

@@ -1,9 +1,7 @@
 import { observable } from "mobx";
-import { KubeObjectStore } from "compass-base/client/kube-object.store";
-import { autobind } from "compass-base/client/utils";
-import { DaemonSet, daemonSetApi, IPodMetrics, Pod, podsApi, PodStatus } from "compass-base/client/api/endpoints";
+import { DaemonSet, daemonSetApi, IPodMetrics, Pod, podsApi, PodStatus, apiManager, KubeObjectStore } from "@pskishere/piral-compass-api";
+import { autobind } from "@pskishere/piral-compass-utils";
 import { podsStore } from "../+workloads-pods/pods.store";
-import { apiManager } from "compass-base/client/api/api-manager";
 
 @autobind()
 export class DaemonSetStore extends KubeObjectStore<DaemonSet> {

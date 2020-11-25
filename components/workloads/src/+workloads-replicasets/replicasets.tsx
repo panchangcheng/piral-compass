@@ -2,15 +2,12 @@ import "./replicasets.scss";
 
 import React from "react";
 import { observer } from "mobx-react";
-import { ReplicaSet, replicaSetApi } from "compass-base/client/api/endpoints";
-import { KubeObjectMenu, KubeObjectMenuProps } from "compass-base/client/components/kube-object/kube-object-menu";
+import { ReplicaSet, replicaSetApi, apiManager } from "@pskishere/piral-compass-api";
+import { Table, TableCell, TableHead, TableRow, KubeObjectMenu, KubeObjectMenuProps } from "@pskishere/piral-compass-kube-layout";
 import { replicaSetStore } from "./replicasets.store";
-import { Spinner } from "compass-base/client/components/spinner";
-import { prevDefault, stopPropagation } from "compass-base/client/utils";
-import { DrawerTitle } from "compass-base/client/components/drawer";
-import { Table, TableCell, TableHead, TableRow } from "compass-base/client/components/table";
-import { showDetails } from "compass-base/client/navigation";
-import { apiManager } from "compass-base/client/api/api-manager";
+import { Spinner } from "@pskishere/piral-compass-spinner";
+import { prevDefault, stopPropagation, showDetails } from "@pskishere/piral-compass-utils";
+import { DrawerTitle } from "@pskishere/piral-compass-drawer";
 
 enum sortBy {
   name = "name",

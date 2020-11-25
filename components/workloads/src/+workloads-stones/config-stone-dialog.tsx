@@ -1,17 +1,16 @@
 import "./config-stone-dialog.scss";
 
+import { observable } from "mobx";
 import React from "react";
 import { observer } from "mobx-react";
-import { Dialog, DialogProps } from "compass-base/client/components/dialog";
-import { observable } from "mobx";
-import { Stone } from "compass-base/client/api/endpoints";
-import { Wizard, WizardStep } from "compass-base/client/components/wizard";
-import { SubTitle } from "compass-base/client/components/layout/sub-title";
-import { Notifications } from "compass-base/client/components/notifications";
-import { Select } from "compass-base/client/components/select";
+import { Dialog, DialogProps } from "@pskishere/piral-compass-dialog";
+import { Stone } from "@pskishere/piral-compass-api";
+import { Wizard, WizardStep } from "@pskishere/piral-compass-wizard";
+import { SubTitle } from "@pskishere/piral-compass-sub-title";
+import { Notifications } from "@pskishere/piral-compass-notifications";
+import { Select } from "@pskishere/piral-compass-select";
+import { Input, isNumber } from "@pskishere/piral-compass-input";
 import { stoneStore } from "./stones.store";
-import { Input } from "compass-base/client/components/input";
-import { isNumber } from "compass-base/client/components/input/input.validators";
 
 interface Props extends Partial<DialogProps> {
 }

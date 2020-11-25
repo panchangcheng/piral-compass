@@ -1,19 +1,20 @@
 import "./add-deploy-dialog.scss"
 
 import React from "react";
-import {observer} from "mobx-react";
-import {Dialog, DialogProps} from "compass-base/client/components/dialog";
 import {observable} from "mobx";
-import {Wizard, WizardStep} from "compass-base/client/components/wizard";
+import {observer} from "mobx-react";
+import {Notifications} from "@pskishere/piral-compass-notifications";
+import {Dialog, DialogProps} from "@pskishere/piral-compass-dialog";
+import {Wizard, WizardStep} from "@pskishere/piral-compass-wizard";
+import {configStore} from "@pskishere/piral-compass-api";
+import {Collapse} from "@pskishere/piral-compass-collapse";
 // import {Container, container, MultiContainerDetails} from "../+deploy-container";
 // import {deployService, DeployServiceDetails, Service} from "../+deploy-service";
 // import {MultiVolumeClaimDetails, VolumeClaimTemplate} from "../+deploy-volumeclaim";
 // import {app, App} from "../+deploy-app";
 // import {AppDetails} from "../+deploy-app";
 import {deployStore} from "./deploy.store";
-import {Notifications} from "compass-base/client/components/notifications";
-import {configStore} from "compass-base/client/config.store";
-import {Collapse} from "compass-base/client/components/collapse";
+
 
 interface Props extends DialogProps {
 }

@@ -1,10 +1,7 @@
 import countBy from "lodash/countBy";
 import { action, observable } from "mobx";
-import { KubeObjectStore } from "compass-base/client/kube-object.store";
-import { autobind, cpuUnitsToNumber, unitsToBytes } from "compass-base/client/utils";
-import { IPodMetrics, Pod, PodMetrics, podMetricsApi, podsApi } from "compass-base/client/api/endpoints";
-import { WorkloadKubeObject } from "compass-base/client/api/workload-kube-object";
-import { apiManager } from "compass-base/client/api/api-manager";
+import { WorkloadKubeObject, KubeObjectStore, apiManager, IPodMetrics, Pod, PodMetrics, podMetricsApi, podsApi } from "@pskishere/piral-compass-api";
+import { autobind, cpuUnitsToNumber, unitsToBytes } from "@pskishere/piral-compass-utils";
 
 @autobind()
 export class PodsStore extends KubeObjectStore<Pod> {

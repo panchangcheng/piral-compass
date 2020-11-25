@@ -3,16 +3,14 @@ import "./statefulsets.scss";
 import React from "react";
 import { observer } from "mobx-react";
 import { RouteComponentProps } from "react-router";
-import { StatefulSet, statefulSetApi } from "compass-base/client/api/endpoints";
+import { StatefulSet, statefulSetApi, apiManager } from "@pskishere/piral-compass-api";
+import { KubeObjectListLayout, KubeObjectMenu, KubeObjectMenuProps } from "@pskishere/piral-compass-kube-layout";
 import { podsStore } from "../+workloads-pods/pods.store";
 import { statefulSetStore } from "./statefulset.store";
 import { nodesStore } from "compass-base/client/components/+nodes/nodes.store";
 import { eventStore } from "compass-base/client/components/+events/event.store";
-import { KubeObjectMenu, KubeObjectMenuProps } from "compass-base/client/components/kube-object/kube-object-menu";
-import { KubeObjectListLayout } from "compass-base/client/components/kube-object";
 import { IStatefulSetsRouteParams } from "../+workloads";
 import { KubeEventIcon } from "compass-base/client/components/+events/kube-event-icon";
-import { apiManager } from "compass-base/client/api/api-manager";
 
 import {PageComponentProps} from "compass-shell";
 

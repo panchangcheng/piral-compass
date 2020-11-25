@@ -1,12 +1,11 @@
 import React, { useContext } from "react";
 import { observer } from "mobx-react";
-import { IPodMetrics } from "compass-base/client/api/endpoints";
-import { BarChart, cpuOptions, memoryOptions } from "compass-base/client/components/chart";
-import { isMetricsEmpty, normalizeMetrics } from "compass-base/client/api/endpoints/metrics.api";
-import { NoMetrics } from "compass-base/client/components/resource-metrics/no-metrics";
+import { IPodMetrics, WorkloadKubeObject } from "@pskishere/piral-compass-api";
+import { BarChart, cpuOptions, memoryOptions } from "@pskishere/piral-compass-chart";
+// import { isMetricsEmpty, normalizeMetrics } from "compass-base/client/api/endpoints/metrics.api";
+// import { NoMetrics } from "compass-base/client/components/resource-metrics/no-metrics";
 import { IResourceMetricsValue, ResourceMetricsContext } from "compass-base/client/components/resource-metrics";
-import { WorkloadKubeObject } from "compass-base/client/api/workload-kube-object";
-import { themeStore } from "compass-base/client/theme.store";
+import { themeStore } from "@pskishere/piral-compass-themes";
 
 export const podMetricTabs = [
   `CPU`,

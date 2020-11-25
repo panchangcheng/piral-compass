@@ -1,9 +1,9 @@
 import "./pod-details-affinities.scss";
 import * as React from "react";
 import jsYaml from "js-yaml";
-import { AceEditor } from "compass-base/client/components/ace-editor";
-import { DrawerParamToggler, DrawerItem } from "compass-base/client/components/drawer";
-import { Pod, Deployment, DaemonSet, StatefulSet, ReplicaSet, Job, EnhanceStatefulSet } from "compass-base/client/api/endpoints";
+import { AceEditor } from "@pskishere/piral-compass-ace-editor";
+import { DrawerParamToggler, DrawerItem } from "@pskishere/piral-compass-drawer";
+import { Pod, Deployment, DaemonSet, StatefulSet, ReplicaSet, Job, EnhanceStatefulSet } from "@pskishere/piral-compass-api";
 
 interface Props {
   workload: Pod | Deployment | DaemonSet | StatefulSet | ReplicaSet | Job | EnhanceStatefulSet;

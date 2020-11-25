@@ -5,8 +5,9 @@ import { observable, when } from "mobx";
 import { observer } from "mobx-react";
 import { OverviewStatuses } from "./overview-statuses";
 import { RouteComponentProps } from "react-router";
+import { Spinner } from "@pskishere/piral-compass-spinner";
 import { IWorkloadsOverviewRouteParams } from "../+workloads";
-import { eventStore } from "compass-base/client/components/+events/event.store";
+// import { eventStore } from "compass-base/client/components/+events/event.store";
 import { podsStore } from "../+workloads-pods/pods.store";
 import { deploymentStore } from "../+workloads-deployments/deployments.store";
 import { daemonSetStore } from "../+workloads-daemonsets/daemonsets.store";
@@ -17,8 +18,7 @@ import { stoneStore } from "../+workloads-stones/stones.store"
 import { waterStore } from "../+workloads-waters/waters.store"
 import { jobStore } from "../+workloads-jobs/job.store";
 import { cronJobStore } from "../+workloads-cronjobs/cronjob.store";
-import { Spinner } from "compass-base/client/components/spinner";
-import { Events } from "compass-base/client/components/+events";
+// import { Events } from "compass-base/client/components/+events";
 import { PageComponentProps } from "compass-shell";
 
 interface Props extends RouteComponentProps<IWorkloadsOverviewRouteParams> {

@@ -1,18 +1,17 @@
 import "./pod-menu.scss";
 
 import * as React from "react";
-import { MenuItem, SubMenu } from "compass-base/client/components/menu";
-import { IPodContainer, Pod, nodesApi, podsApi } from "compass-base/client/api/endpoints";
-import { Icon } from "compass-base/client/components/icon";
-import { StatusBrick } from "compass-base/client/components/status-brick";
+import { MenuItem, SubMenu } from "@pskishere/piral-compass-menu";
+import { IPodContainer, Pod, nodesApi, podsApi } from "@pskishere/piral-compass-api";
+import { Icon } from "@pskishere/piral-compass-icon";
+import { StatusBrick } from "@pskishere/piral-compass-status-brick";
 import { PodLogsDialog } from "./pod-logs-dialog";
 import {
   KubeObjectMenu,
   KubeObjectMenuProps,
-} from "compass-base/client/components/kube-object/kube-object-menu";
-import { cssNames, prevDefault } from "compass-base/client/utils";
-import { terminalStore } from "compass-base/client/components/dock/terminal.store";
-import { hideDetails } from "compass-base/client/navigation";
+} from "@pskishere/piral-compass-kube-layout";
+import { cssNames, prevDefault, hideDetails } from "@pskishere/piral-compass-utils";
+import { terminalStore } from "@pskishere/piral-compass-dock";
 
 interface Props extends KubeObjectMenuProps<Pod> {}
 

@@ -2,20 +2,18 @@ import "./deploy.store.ts";
 
 import React from "react";
 import { observer } from "mobx-react";
-import { MenuItem } from "compass-base/client/components/menu";
-import { Icon } from "compass-base/client/components/icon";
+import Tooltip from "@material-ui/core/Tooltip";
 import { RouteComponentProps } from "react-router";
-import { Deploy, deployApi } from "compass-base/client/api/endpoints";
-import { KubeObjectMenu, KubeObjectMenuProps } from "compass-base/client/components/kube-object";
-import { KubeObjectListLayout } from "compass-base/client/components/kube-object";
+import { MenuItem } from "@pskishere/piral-compass-menu";
+import { Icon } from "@pskishere/piral-compass-icon";
+import { Deploy, deployApi, apiManager } from "@pskishere/piral-compass-api";
+import { stopPropagation } from "@pskishere/piral-compass-utils";
+import { KubeObjectMenu, KubeObjectMenuProps, KubeObjectListLayout } from "@pskishere/piral-compass-kube-layout";
 import { DeployDialog, AddDeployDialog } from "../+workloads-deploy";
 import { IDeployWorkloadsParams } from "../+workloads"
-import { apiManager } from "compass-base/client/api/api-manager";
 import { deployStore } from "./deploy.store";
 import { ConfigDeployDialog } from "./config-deploy-dialog";
 import { Link } from "react-router-dom";
-import { stopPropagation } from "compass-base/client/utils";
-import Tooltip from "@material-ui/core/Tooltip";
 
 import {PageComponentProps} from "compass-shell"
 

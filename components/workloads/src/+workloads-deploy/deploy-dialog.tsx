@@ -1,14 +1,15 @@
 import React from "react";
-import { observer } from "mobx-react";
-import { Dialog, DialogProps } from "compass-base/client/components/dialog";
 import { observable } from "mobx";
-import { Input } from "compass-base/client/components/input"
-import { Wizard, WizardStep } from "compass-base/client/components/wizard";
-import { SubTitle } from "compass-base/client/components/layout/sub-title";
-import { NamespaceSelect } from "compass-base/client/components/+namespaces/namespace-select";
-import { apiBase } from "compass-base/client/api";
-import { Notifications } from "compass-base/client/components/notifications";
-import { NamespaceAllowStorageClassSelect } from "compass-base/client/components/+namespaces/namespace-allow-storageclass-select";
+import { observer } from "mobx-react";
+import { Dialog, DialogProps } from "@pskishere/piral-compass-dialog";
+import { Input } from "@pskishere/piral-compass-input"
+import { Wizard, WizardStep } from "@pskishere/piral-compass-wizard";
+import { SubTitle } from "@pskishere/piral-compass-sub-title";
+import { apiBase } from "@pskishere/piral-compass-api";
+import { Notifications } from "@pskishere/piral-compass-notifications";
+// import { NamespaceSelect } from "compass-base/client/components/+namespaces/namespace-select";
+
+// import { NamespaceAllowStorageClassSelect } from "compass-base/client/components/+namespaces/namespace-allow-storageclass-select";
 
 interface Props extends Partial<DialogProps> {
 }
@@ -87,23 +88,23 @@ export class DeployDialog extends React.Component<Props> {
             next={this.updateDeploy}>
             <div className="namespace">
               <SubTitle title={`Namespace`} />
-              <NamespaceSelect
+              {/* <NamespaceSelect
                 value={this.namespace}
                 placeholder={`Namespace`}
                 themeName="light"
                 className="box grow"
                 onChange={(v) => this.namespace = v.value}
-              />
+              /> */}
 
               <SubTitle title={`StorageClass`} />
-              <NamespaceAllowStorageClassSelect
+              {/* <NamespaceAllowStorageClassSelect
                 themeName="light"
                 className="box grow"
                 placeholder={`StorageClass`}
                 namespaceName={this.namespace}
                 value={this.storageClass}
                 onChange={({ value }) => this.storageClass = value}
-              />
+              /> */}
 
               <SubTitle title={`Replicas`} />
               <Input

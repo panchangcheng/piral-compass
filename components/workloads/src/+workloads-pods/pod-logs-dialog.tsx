@@ -3,13 +3,13 @@ import "./pod-logs-dialog.scss";
 import * as React from "react";
 import { observable } from "mobx";
 import { observer } from "mobx-react";
-import { Dialog, DialogProps } from "compass-base/client/components/dialog";
-import { Wizard, WizardStep } from "compass-base/client/components/wizard";
-import { IPodContainer, Pod, podsApi } from "compass-base/client/api/endpoints";
-import { Icon } from "compass-base/client/components/icon";
-import { Select, SelectOption } from "compass-base/client/components/select";
-import { Spinner } from "compass-base/client/components/spinner";
-import { cssNames, downloadFile, interval } from "compass-base/client/utils";
+import { Dialog, DialogProps } from "@pskishere/piral-compass-dialog";
+import { Wizard, WizardStep } from "@pskishere/piral-compass-wizard";
+import { IPodContainer, Pod, podsApi } from "@pskishere/piral-compass-api";
+import { Icon } from "@pskishere/piral-compass-icon";
+import { Select, SelectOption } from "@pskishere/piral-compass-select";
+import { Spinner } from "@pskishere/piral-compass-spinner";
+import { cssNames, downloadFile, interval } from "@pskishere/piral-compass-utils";
 
 interface IPodLogsDialogData {
   pod: Pod;

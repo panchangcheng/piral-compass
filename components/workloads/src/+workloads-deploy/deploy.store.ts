@@ -1,8 +1,5 @@
-import {autobind} from "compass-base/client/utils";
-import {KubeObjectStore} from "compass-base/client/kube-object.store";
-import {deployApi} from "compass-base/client/api/endpoints";
-import {apiManager} from "compass-base/client/api/api-manager";
-import {Deploy} from "compass-base/client/api/endpoints";
+import {autobind} from "@pskishere/piral-compass-utils";
+import {KubeObjectStore, deployApi, Deploy, apiManager} from "@pskishere/piral-compass-api";
 
 @autobind()
 export class DeployStore extends KubeObjectStore<Deploy> {

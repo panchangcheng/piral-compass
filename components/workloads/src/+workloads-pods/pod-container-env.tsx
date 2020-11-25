@@ -2,14 +2,15 @@ import "./pod-container-env.scss";
 
 import React, { useEffect, useState } from "react";
 import flatten from "lodash/flatten";
-import { observer } from "mobx-react";
-import { IPodContainer, Secret } from "compass-base/client/api/endpoints";
-import { DrawerItem } from "compass-base/client/components/drawer";
 import { autorun } from "mobx";
+import { observer } from "mobx-react";
+import { IPodContainer, Secret } from "@pskishere/piral-compass-api";
+import { DrawerItem } from "@pskishere/piral-compass-drawer";
+import { Icon } from "@pskishere/piral-compass-icon";
+import { base64, cssNames } from "@pskishere/piral-compass-utils";
 // import { secretsStore } from "compass-base/client/components/+config-secrets/secrets.store";
 // import { configMapsStore } from "compass-base/client/components/+config-maps/config-maps.store";
-import { Icon } from "compass-base/client/components/icon";
-import { base64, cssNames } from "compass-base/client/utils";
+
 
 interface Props {
   container: IPodContainer;

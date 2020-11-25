@@ -1,7 +1,7 @@
 import "./pod-details-tolerations.scss";
 import * as React from "react";
-import { Pod, Deployment, DaemonSet, StatefulSet, ReplicaSet, Job, EnhanceStatefulSet } from "compass-base/client/api/endpoints";
-import { DrawerParamToggler, DrawerItem } from "compass-base/client/components/drawer";
+import { Pod, Deployment, DaemonSet, StatefulSet, ReplicaSet, Job, EnhanceStatefulSet } from "@pskishere/piral-compass-api";
+import { DrawerParamToggler, DrawerItem } from "@pskishere/piral-compass-drawer";
 
 interface Props {
   workload: Pod | Deployment | DaemonSet | StatefulSet | ReplicaSet | Job | EnhanceStatefulSet;

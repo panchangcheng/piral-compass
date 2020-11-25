@@ -1,22 +1,22 @@
 import "./replicaset-details.scss";
 import React from "react";
 import { reaction } from "mobx";
-import { DrawerItem } from "compass-base/client/components/drawer";
-import { Badge } from "compass-base/client/components/badge";
+import { disposeOnUnmount, observer } from "mobx-react";
+import { DrawerItem } from "@pskishere/piral-compass-drawer";
+import { Badge } from "@pskishere/piral-compass-badge";
+import { KubeObjectDetailsProps } from "@pskishere/piral-compass-kube-layout";
+import { ReplicaSet, replicaSetApi, apiManager } from "@pskishere/piral-compass-api";
+import { KubeObjectMeta } from "@pskishere/piral-compass-kube-layout";
 import { replicaSetStore } from "./replicasets.store";
 import { PodDetailsStatuses } from "../+workloads-pods/pod-details-statuses";
 import { PodDetailsTolerations } from "../+workloads-pods/pod-details-tolerations";
 import { PodDetailsAffinities } from "../+workloads-pods/pod-details-affinities";
 import { KubeEventDetails } from "compass-base/client/components/+events/kube-event-details";
-import { disposeOnUnmount, observer } from "mobx-react";
 import { podsStore } from "../+workloads-pods/pods.store";
-import { KubeObjectDetailsProps } from "compass-base/client/components/kube-object";
-import { ReplicaSet, replicaSetApi } from "compass-base/client/api/endpoints";
 import { ResourceMetrics, ResourceMetricsText } from "compass-base/client/components/resource-metrics";
 import { PodCharts, podMetricTabs } from "../+workloads-pods/pod-charts";
 import { PodDetailsList } from "../+workloads-pods/pod-details-list";
-import { apiManager } from "compass-base/client/api/api-manager";
-import { KubeObjectMeta } from "compass-base/client/components/kube-object/kube-object-meta";
+
 
 interface Props extends KubeObjectDetailsProps<ReplicaSet> {
 }

@@ -3,18 +3,15 @@ import "./daemonsets.scss";
 import React from "react";
 import { observer } from "mobx-react";
 import { RouteComponentProps } from "react-router";
-import { DaemonSet, daemonSetApi } from "compass-base/client/api/endpoints";
-import { KubeObjectMenu, KubeObjectMenuProps } from "compass-base/client/components/kube-object/kube-object-menu";
-import { eventStore } from "compass-base/client/components/+events/event.store";
+import { DaemonSet, daemonSetApi, apiManager } from "@pskishere/piral-compass-api";
+import { Badge } from "@pskishere/piral-compass-badge";
+import { KubeObjectListLayout, KubeObjectMenu, KubeObjectMenuProps } from "@pskishere/piral-compass-kube-layout";
 import { daemonSetStore } from "./daemonsets.store";
 import { podsStore } from "../+workloads-pods/pods.store";
-import { nodesStore } from "compass-base/client/components/+nodes/nodes.store";
-import { KubeObjectListLayout } from "compass-base/client/components/kube-object";
 import { IDaemonSetsRouteParams } from "../+workloads";
-import { Badge } from "compass-base/client/components/badge";
-import { KubeEventIcon } from "compass-base/client/components/+events/kube-event-icon";
-import { apiManager } from "compass-base/client/api/api-manager";
-import { Notifications } from "compass-base/client/components/notifications";
+// import { eventStore } from "compass-base/client/components/+events/event.store";
+// import { nodesStore } from "compass-base/client/components/+nodes/nodes.store";
+// import { KubeEventIcon } from "compass-base/client/components/+events/kube-event-icon";
 
 import { PageComponentProps } from "compass-shell";
 
@@ -45,7 +42,7 @@ export class DaemonSets extends React.Component<PageComponentProps, any> {
       <KubeObjectListLayout
         className="DaemonSets" 
         store={daemonSetStore}
-        dependentStores={[podsStore, nodesStore, eventStore]}
+        dependentStores={[podsStore, ]}
         sortingCallbacks={{
           [sortBy.name]: (daemonSet: DaemonSet) => daemonSet.getName(),
           [sortBy.namespace]: (daemonSet: DaemonSet) => daemonSet.getNs(),
@@ -61,7 +58,7 @@ export class DaemonSets extends React.Component<PageComponentProps, any> {
           { title: `Name`, className: "name", sortBy: sortBy.name },
           { title: `Namespace`, className: "namespace", sortBy: sortBy.namespace },
           { title: `Pods`, className: "pods", sortBy: sortBy.pods },
-          { className: "warning" },
+          // { className: "warning" },
           { title: `Node Selector`, className: "labels" },
           { title: `Age`, className: "age", sortBy: sortBy.age },
         ]}
@@ -69,7 +66,7 @@ export class DaemonSets extends React.Component<PageComponentProps, any> {
           daemonSet.getName(),
           daemonSet.getNs(),
           this.getPodsLength(daemonSet),
-          <KubeEventIcon object={daemonSet}/>,
+          // <KubeEventIcon object={daemonSet}/>,
           this.renderNodeSelector(daemonSet),
           daemonSet.getAge(),
         ]}

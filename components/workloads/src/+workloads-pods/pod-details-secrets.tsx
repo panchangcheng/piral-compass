@@ -4,8 +4,8 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { autorun, observable } from "mobx";
 import { disposeOnUnmount, observer } from "mobx-react";
-import { Pod, Secret, secretsApi } from "compass-base/client/api/endpoints";
-import { getDetailsUrl } from "compass-base/client/navigation";
+import { Pod, Secret, secretsApi } from "@pskishere/piral-compass-api";
+import { getDetailsUrl } from "@pskishere/piral-compass-utils";
 
 interface Props {
   pod: Pod;

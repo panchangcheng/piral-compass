@@ -3,13 +3,13 @@ import "./deployment-scale-dialog.scss";
 import React, { Component } from "react";
 import { computed, observable } from "mobx";
 import { observer } from "mobx-react";
-import { Dialog, DialogProps } from "compass-base/client/components/dialog";
-import { Wizard, WizardStep } from "compass-base/client/components/wizard";
-import { Deployment, deploymentApi } from "compass-base/client/api/endpoints";
-import { Icon } from "compass-base/client/components/icon";
-import { Slider } from "compass-base/client/components/slider";
-import { Notifications } from "compass-base/client/components/notifications";
-import { cssNames } from "compass-base/client/utils";
+import { Dialog, DialogProps } from "@pskishere/piral-compass-dialog";
+import { Wizard, WizardStep } from "@pskishere/piral-compass-wizard";
+import { Deployment, deploymentApi } from "@pskishere/piral-compass-api";
+import { Icon } from "@pskishere/piral-compass-icon";
+import { Slider } from "@pskishere/piral-compass-slider";
+import { Notifications } from "@pskishere/piral-compass-notifications";
+import { cssNames } from "@pskishere/piral-compass-utils";
 
 interface Props extends Partial<DialogProps> {
 }

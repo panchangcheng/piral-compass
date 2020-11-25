@@ -1,7 +1,5 @@
-import { KubeObjectStore } from "compass-base/client/kube-object.store";
-import { autobind } from "compass-base/client/utils";
-import { Job, jobApi } from "compass-base/client/api/endpoints/job.api";
-import { CronJob, Pod, PodStatus } from "compass-base/client/api/endpoints";
+import { KubeObjectStore, Job, jobApi, CronJob, Pod, PodStatus } from "@pskishere/piral-compass-api";
+import { autobind } from "@pskishere/piral-compass-utils";
 import { podsStore } from "../+workloads-pods/pods.store";
 
 @autobind()

@@ -1,9 +1,7 @@
 import { observable } from "mobx";
-import { autobind } from "compass-base/client/utils";
-import { KubeObjectStore } from "compass-base/client/kube-object.store";
-import { IPodMetrics, podsApi, PodStatus, Stone, stoneApi } from "compass-base/client/api/endpoints";
+import { autobind } from "@pskishere/piral-compass-utils";
+import { IPodMetrics, podsApi, PodStatus, Stone, stoneApi, KubeObjectStore, apiManager } from "@pskishere/piral-compass-api";
 import { podsStore } from "../+workloads-pods/pods.store";
-import { apiManager } from "compass-base/client/api/api-manager";
 import { enhanceStatefulSetStore } from "../+workloads-enhancestatefulsets/enhancestatefulset.store";
 
 @autobind()

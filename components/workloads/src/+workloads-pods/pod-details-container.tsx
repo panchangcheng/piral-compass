@@ -1,11 +1,11 @@
 import "./pod-details-container.scss"
 
 import * as React from "react";
-import { IPodContainer, Pod } from "compass-base/client/api/endpoints";
-import { DrawerItem } from "compass-base/client/components/drawer";
-import { cssNames } from "compass-base/client/utils";
-import { StatusBrick } from "compass-base/client/components/status-brick";
-import { Badge } from "compass-base/client/components/badge";
+import { IPodContainer, Pod } from "@pskishere/piral-compass-api";
+import { DrawerItem } from "@pskishere/piral-compass-drawer";
+import { cssNames } from "@pskishere/piral-compass-utils";
+import { StatusBrick } from "@pskishere/piral-compass-status-brick";
+import { Badge } from "@pskishere/piral-compass-badge";
 import { ContainerEnvironment } from "./pod-container-env";
 import { ResourceMetrics } from "compass-base/client/components/resource-metrics";
 import { IMetrics } from "compass-base/client/api/endpoints/metrics.api";

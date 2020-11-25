@@ -1,9 +1,7 @@
 import { observable } from "mobx";
-import { autobind } from "compass-base/client/utils";
-import { KubeObjectStore } from "compass-base/client/kube-object.store";
-import { IPodMetrics, podsApi, PodStatus, Water, waterApi } from "compass-base/client/api/endpoints";
+import { autobind } from "@pskishere/piral-compass-utils";
+import { KubeObjectStore, IPodMetrics, podsApi, PodStatus, Water, waterApi, apiManager } from "@pskishere/piral-compass-api";
 import { podsStore } from "../+workloads-pods/pods.store";
-import { apiManager } from "compass-base/client/api/api-manager";
 
 @autobind()
 export class WaterStore extends KubeObjectStore<Water> {

@@ -3,9 +3,8 @@ import "./workloads.scss"
 import * as React from "react";
 import store from "store";
 import { observer } from "mobx-react";
-import { Redirect, Route, Switch } from "react-router";
 import { RouteComponentProps } from "react-router-dom";
-import { MainLayout, TabRoute } from "compass-base/client/components/layout/main-layout";
+// import { MainLayout, TabRoute } from "compass-base/client/components/layout/main-layout";
 import { WorkloadsOverview } from "../+workloads-overview/overview";
 import {
   watersRoute,
@@ -34,7 +33,7 @@ import {
   deployRoute,
   deployURL
 } from "./workloads.route";
-import { namespaceStore } from "compass-base/client/components/+namespaces/namespace.store";
+// import { namespaceStore } from "compass-base/client/components/+namespaces/namespace.store";
 import { Pods } from "../+workloads-pods";
 import { Deployments } from "../+workloads-deployments";
 import { DaemonSets } from "../+workloads-daemonsets";
@@ -53,7 +52,7 @@ interface Props extends RouteComponentProps {
 @observer
 export class Workloads extends React.Component<Props> {
   static get tabRoutes(): TabRoute[] {
-    const query = namespaceStore.getContextParams();
+    // const query = namespaceStore.getContextParams();
     // const userConfig = store.get('u_config')
     // const isClusterAdmin = userConfig ? userConfig.isClusterAdmin : false
     return [
@@ -132,15 +131,15 @@ export class Workloads extends React.Component<Props> {
     ]
   };
 
-  render() {
-    const tabRoutes = Workloads.tabRoutes;
-    return (
-      <MainLayout className="Workloads" tabs={tabRoutes}>
-        <Switch>
-          {tabRoutes.map((route, index) => <Route key={index} {...route} />)}
-          <Redirect to={workloadsURL({ query: namespaceStore.getContextParams() })} />
-        </Switch>
-      </MainLayout>
-    )
-  }
+  // render() {
+  //   const tabRoutes = Workloads.tabRoutes;
+  //   return (
+  //     <MainLayout className="Workloads" tabs={tabRoutes}>
+  //       <Switch>
+  //         {tabRoutes.map((route, index) => <Route key={index} {...route} />)}
+  //         <Redirect to={workloadsURL({ query: namespaceStore.getContextParams() })} />
+  //       </Switch>
+  //     </MainLayout>
+  //   )
+  // }
 }

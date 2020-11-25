@@ -5,25 +5,21 @@ import kebabCase from "lodash/kebabCase";
 import { disposeOnUnmount, observer } from "mobx-react";
 import { Link } from "react-router-dom";
 import { autorun, observable, reaction, toJS } from "mobx";
-import { IPodMetrics, nodesApi, Pod, podsApi, pvcApi } from "compass-base/client/api/endpoints";
-import { DrawerItem, DrawerTitle } from "compass-base/client/components/drawer";
-import { Badge } from "compass-base/client/components/badge";
-import { autobind, cssNames, interval } from "compass-base/client/utils";
+import { IPodMetrics, nodesApi, Pod, podsApi, pvcApi, lookupApiLink, apiManager } from "@pskishere/piral-compass-api";
+import { Icon } from "@pskishere/piral-compass-icon";
+import { DrawerItem, DrawerTitle } from "@pskishere/piral-compass-drawer";
+import { Badge } from "@pskishere/piral-compass-badge";
+import { autobind, cssNames, interval, getDetailsUrl } from "@pskishere/piral-compass-utils";
 import { PodDetailsContainer } from "./pod-details-container";
 import { PodDetailsAffinities } from "./pod-details-affinities";
 import { PodDetailsTolerations } from "./pod-details-tolerations";
-import { Icon } from "compass-base/client/components/icon";
 import { KubeEventDetails } from "compass-base/client/components/+events/kube-event-details";
 import { PodDetailsSecrets } from "./pod-details-secrets";
 import { ResourceMetrics } from "compass-base/client/components/resource-metrics";
 import { podsStore } from "./pods.store";
-import { getDetailsUrl } from "compass-base/client/navigation";
-import { KubeObjectDetailsProps } from "compass-base/client/components/kube-object";
+import { KubeObjectDetailsProps, KubeObjectMeta } from "@pskishere/piral-compass-kube-layout";
 import { getItemMetrics } from "compass-base/client/api/endpoints/metrics.api";
 import { PodCharts, podMetricTabs } from "./pod-charts";
-import { lookupApiLink } from "compass-base/client/api/kube-api";
-import { apiManager } from "compass-base/client/api/api-manager";
-import { KubeObjectMeta } from "compass-base/client/components/kube-object/kube-object-meta";
 
 interface Props extends KubeObjectDetailsProps<Pod> {
 }

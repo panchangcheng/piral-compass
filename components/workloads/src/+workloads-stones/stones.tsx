@@ -3,22 +3,23 @@ import "./stones.scss";
 import React from "react";
 import {observer} from "mobx-react";
 import {RouteComponentProps} from "react-router";
-import {Stone, stoneApi} from "compass-base/client/api/endpoints";
+import {Link} from "react-router-dom";
+import Tooltip from "@material-ui/core/Tooltip";
+import {Stone, stoneApi, apiManager} from "@pskishere/piral-compass-api";
+import {MenuItem} from "@pskishere/piral-compass-menu";
+import {Icon} from "@pskishere/piral-compass-icon";
+import {stopPropagation} from "@pskishere/piral-compass-utils";
+import {KubeObjectListLayout, KubeObjectMenu, KubeObjectMenuProps} from "@pskishere/piral-compass-kube-layout";
 import {podsStore} from "../+workloads-pods/pods.store";
 import {stoneStore} from "./stones.store";
 import {nodesStore} from "compass-base/client/components/+nodes/nodes.store";
 import {eventStore} from "compass-base/client/components/+events/event.store";
-import {KubeObjectMenu, KubeObjectMenuProps} from "compass-base/client/components/kube-object";
-import {KubeObjectListLayout} from "compass-base/client/components/kube-object";
 import {IStonesRouteParams} from "../+workloads";
-import {apiManager} from "compass-base/client/api/api-manager";
 import {enhanceStatefulSetStore} from "../+workloads-enhancestatefulsets/enhancestatefulset.store";
-import {MenuItem} from "compass-base/client/components/menu";
-import {Icon} from "compass-base/client/components/icon";
+
 import {ConfigStoneDialog} from "./config-stone-dialog";
-import {Link} from "react-router-dom";
-import Tooltip from "@material-ui/core/Tooltip";
-import {stopPropagation} from "compass-base/client/utils";
+
+
 
 import {PageComponentProps} from "compass-shell";
 

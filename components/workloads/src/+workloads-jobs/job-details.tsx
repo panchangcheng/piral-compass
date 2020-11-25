@@ -3,22 +3,18 @@ import "./job-details.scss";
 import React from "react";
 import kebabCase from "lodash/kebabCase";
 import { observer } from "mobx-react";
-import { DrawerItem } from "compass-base/client/components/drawer";
-import { Badge } from "compass-base/client/components/badge";
-import { PodDetailsStatuses } from "../+workloads-pods/pod-details-statuses";
 import { Link } from "react-router-dom";
+import { DrawerItem } from "@pskishere/piral-compass-drawer";
+import { Badge } from "@pskishere/piral-compass-badge";
+import { getDetailsUrl } from "@pskishere/piral-compass-utils";
+import { Job, jobApi, lookupApiLink, apiManager } from "@pskishere/piral-compass-api";
+import { KubeObjectDetailsProps, KubeObjectMeta } from "@pskishere/piral-compass-kube-layout";
+import { PodDetailsStatuses } from "../+workloads-pods/pod-details-statuses";
 import { PodDetailsTolerations } from "../+workloads-pods/pod-details-tolerations";
 import { PodDetailsAffinities } from "../+workloads-pods/pod-details-affinities";
-import { KubeEventDetails } from "compass-base/client/components/+events/kube-event-details";
 import { podsStore } from "../+workloads-pods/pods.store";
 import { jobStore } from "./job.store";
-import { getDetailsUrl } from "compass-base/client/navigation";
-import { KubeObjectDetailsProps } from "compass-base/client/components/kube-object";
-import { Job, jobApi } from "compass-base/client/api/endpoints";
 import { PodDetailsList } from "../+workloads-pods/pod-details-list";
-import { lookupApiLink } from "compass-base/client/api/kube-api";
-import { apiManager } from "compass-base/client/api/api-manager";
-import { KubeObjectMeta } from "compass-base/client/components/kube-object/kube-object-meta";
 
 interface Props extends KubeObjectDetailsProps<Job> {
 }
@@ -100,7 +96,7 @@ export class JobDetails extends React.Component<Props> {
           <PodDetailsStatuses pods={childPods}/>
         </DrawerItem>
         <PodDetailsList pods={childPods} owner={job}/>
-        <KubeEventDetails object={job}/>
+        {/* <KubeEventDetails object={job}/> */}
       </div>
     )
   }

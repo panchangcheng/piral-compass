@@ -1,10 +1,8 @@
 import React from "react";
 import {observer, disposeOnUnmount} from "mobx-react";
 import {autorun} from "mobx";
-import {Deploy, deployApi} from "compass-base/client/api/endpoints"
-import {KubeObjectMeta} from "compass-base/client/components/kube-object/kube-object-meta";
-import {KubeObjectDetailsProps} from "compass-base/client/components/kube-object";
-import {apiManager} from "compass-base/client/api/api-manager";
+import {Deploy, deployApi, apiManager} from "@pskishere/piral-compass-api"
+import {KubeObjectMeta, KubeObjectDetailsProps} from "@pskishere/piral-compass-kube-layout";
 
 interface Props extends KubeObjectDetailsProps<Deploy> {
 }

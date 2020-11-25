@@ -5,6 +5,7 @@ import store from "store";
 import { observer } from "mobx-react";
 import { OverviewWorkloadStatus } from "./overview-workload-status";
 import { Link } from "react-router-dom";
+import { PageFiltersList } from "@pskishere/piral-compass-kube-layout";
 import { cronJobsURL, daemonSetsURL, deploymentsURL, jobsURL, podsURL, statefulSetsURL, enhanceStatefulSetsURL, stonesURL, watersURL } from "../+workloads";
 import { podsStore } from "../+workloads-pods/pods.store";
 import { deploymentStore } from "../+workloads-deployments/deployments.store";
@@ -12,11 +13,11 @@ import { daemonSetStore } from "../+workloads-daemonsets/daemonsets.store";
 import { statefulSetStore } from "../+workloads-statefulsets/statefulset.store";
 import { jobStore } from "../+workloads-jobs/job.store";
 import { cronJobStore } from "../+workloads-cronjobs/cronjob.store";
-import { namespaceStore } from "compass-base/client/components/+namespaces/namespace.store";
+// import { namespaceStore } from "compass-base/client/components/+namespaces/namespace.store";
 import { enhanceStatefulSetStore } from "../+workloads-enhancestatefulsets/enhancestatefulset.store"
 import { stoneStore } from "../+workloads-stones/stones.store"
-import { PageFiltersList } from "compass-base/client/components/item-object-list/page-filters-list";
-import { NamespaceSelectFilter } from "compass-base/client/components/+namespaces/namespace-select";
+
+// import { NamespaceSelectFilter } from "compass-base/client/components/+namespaces/namespace-select";
 import { waterStore } from "../+workloads-waters/waters.store";
 
 
@@ -40,7 +41,7 @@ export class OverviewStatuses extends React.Component {
       <div className="OverviewStatuses">
         <div className="header flex gaps align-center">
           <h5 className="box grow">`Overview`</h5>
-          <NamespaceSelectFilter />
+          {/* <NamespaceSelectFilter /> */}
         </div>
         <PageFiltersList />
         <div className="workloads">
