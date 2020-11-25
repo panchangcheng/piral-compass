@@ -3,27 +3,19 @@ import "./main-layout.scss";
 import * as React from "react";
 import {observable, reaction} from "mobx";
 import {disposeOnUnmount, observer} from "mobx-react";
-import {matchPath, RouteProps} from "react-router-dom";
-import {createStorage, cssNames} from "compass-base/client/utils";
-import {Tab, Tabs} from "compass-base/client/components/tabs";
-import {Icon} from "compass-base/client/components/icon";
-// import { Sidebar } from "compass-base/client/components/layout/sidebar";
-import {Sidebar} from "./sidebar";
-import {configStore} from "compass-base/client/config.store";
-import {ErrorBoundary} from "compass-base/client/components/error-boundary";
-import {Dock} from "compass-base/client/components/dock";
-import {MenuItem} from "compass-base/client/components/menu";
-import {MenuActions} from "compass-base/client/components/menu/menu-actions";
-import {navigate, navigation} from "compass-base/client/navigation";
-import {themeStore} from "compass-base/client/theme.store";
+import {matchPath, RouteProps, NavLink} from "react-router-dom";
+import {createStorage, cssNames, navigate,navigation} from "@pskishere/piral-compass-utils";
+import {Tab, Tabs} from "@pskishere/piral-compass-tabs";
+import {Icon} from "@pskishere/piral-compass-icon";
+import {ErrorBoundary} from "@pskishere/piral-compass-error-boundary";
+import {Dock} from "@pskishere/piral-compass-dock";
+import {MenuItem, MenuActions} from "@pskishere/piral-compass-menu";
+import {themeStore} from "@pskishere/piral-compass-themes";
 // import {withRouter,RouteComponentProps } from 'react-router';
-import {kubeWatchApi} from 'compass-base/client/api/kube-watch-api';
+import {kubeWatchApi, configStore} from '@pskishere/piral-compass-api';
 import store from 'store'
-import {Notifications} from "compass-base/client/components/notifications";
-import {LayoutProps} from "piral";
-import {KubeObjectDetails} from "compass-base/client/components/kube-object";
-import {ConfirmDialog} from "compass-base/client/components/confirm-dialog";
-import {KubeConfigDialog} from "compass-base/client/components/kubeconfig-dialog";
+// import {Notifications} from "compass-base/client/components/notifications";
+import {LayoutProps, Menu} from "piral";
 
 export interface TabRoute extends RouteProps {
   title: React.ReactNode;
@@ -40,7 +32,6 @@ export interface TabRoute extends RouteProps {
 // }
 
 interface State {
-
 }
 
 interface Props extends LayoutProps {
@@ -50,6 +41,51 @@ interface Props extends LayoutProps {
   headerClass?: string;
   contentClass?: string;
   footerClass?: string;
+}
+
+const SidebarContext = React.createContext<SidebarContextValue>({pinned: false});
+type SidebarContextValue = {
+  pinned: boolean;
+};
+
+interface SidebarProps {
+  className?: string;
+  isPinned: boolean;
+
+  toggle(): void;
+}
+
+@observer
+class Sidebar extends React.Component<SidebarProps> {
+
+  render() {
+    const {toggle, isPinned, className} = this.props;
+    const userConfig = store.get('u_config')
+    // const isClusterAdmin = userConfig ? userConfig.isClusterAdmin : false
+    // const query = namespaceStore.getContextParams();
+    return (
+      <SidebarContext.Provider value={{pinned: isPinned}}>
+        <div className={cssNames("Sidebar flex column", className, {pinned: isPinned})}>
+          <div className="header flex align-center">
+            <NavLink exact to="/workloads" className="box grow">
+              <Icon svg="compass" className="logo-icon"/>
+              <div className="logo-text">Compass</div>
+            </NavLink>
+            <Icon
+              className="pin-icon"
+              material={isPinned ? "keyboard_arrow_left" : "keyboard_arrow_right"}
+              onClick={toggle}
+              tooltip={isPinned ? `Compact view` : `Extended view`}
+              focusable={false}
+            />
+          </div>
+          <div className="sidebar-nav flex column box grow-fixed">
+            <Menu type={"general"}/>
+          </div>
+        </div>
+      </SidebarContext.Provider>
+    )
+  }
 }
 
 @observer
@@ -89,7 +125,7 @@ export class Layout extends React.PureComponent<Props, any> {
   ifLogin(): any {
     const userConfig = store.get('u_config')
     if (!userConfig) {
-      Notifications.error('Token Expired');
+      // Notifications.error('Token Expired');
       this.logout();
       // setTimeout(()=>{
       //   this.loginout()

@@ -2,11 +2,10 @@ import "./namespace-details.scss";
 
 import * as React from "react";
 import { observer } from "mobx-react";
-import { DrawerItem } from "compass-base/client/components/drawer";
-import { cssNames } from "compass-base/client/utils";
-import { Namespace } from "compass-base/client/api/endpoints";
-import { KubeObjectDetailsProps } from "compass-base/client/components/kube-object";
-import { KubeObjectMeta } from "compass-base/client/components/kube-object/kube-object-meta";
+import { DrawerItem } from "@pskishere/piral-compass-drawer";
+import { cssNames } from "@pskishere/piral-compass-utils";
+import { Namespace } from "@pskishere/piral-compass-api";
+import { KubeObjectDetailsProps, KubeObjectMeta} from "@pskishere/piral-compass-kube-layout";
 
 interface Props extends KubeObjectDetailsProps<Namespace> {
 }

@@ -1,25 +1,20 @@
 {
   "compilerOptions": {
-    "declaration": true,
-    "noImplicitAny": false,
-    "removeComments": false,
-    "noLib": false,
-    "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "declaration": true,
     "target": "es6",
     "sourceMap": true,
-    "outDir": "./dist",
+    "outDir": "./lib",
     "skipLibCheck": true,
     "lib": ["dom", "es2018"],
     "moduleResolution": "node",
     "module": "esnext",
-    "jsx": "preserve",
+    "jsx": "react",
     "importHelpers": true,
-    "allowSyntheticDefaultImports":true,
-    "allowJs": true,
     "esModuleInterop": true
   },
   "include": [
-    "./src"
+    "./src",
+    "./node_modules"
   ]
 }

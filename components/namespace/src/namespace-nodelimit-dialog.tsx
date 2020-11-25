@@ -1,14 +1,14 @@
 import React from "react";
 import {observer} from "mobx-react";
 import {observable} from "mobx";
-import {Dialog, DialogProps} from "compass-base/client/components/dialog";
-import {Wizard, WizardStep} from "compass-base/client/components/wizard";
-import {SubTitle} from "compass-base/client/components/layout/sub-title";
-import {NodeSelect} from "compass-base/client/components/+nodes";
-import {apiBase} from "compass-base/client/api";
-import {Notifications} from "compass-base/client/components/notifications";
-import {Namespace} from "compass-base/client/api/endpoints";
-import {SelectOption} from "compass-base/client/components/select";
+import {Dialog, DialogProps} from "@pskishere/piral-compass-dialog";
+import {Wizard, WizardStep} from "@pskishere/piral-compass-wizard";
+import {SubTitle} from "@pskishere/piral-compass-sub-title";
+import {SelectOption} from "@pskishere/piral-compass-select";
+import {Notifications} from "@pskishere/piral-compass-notifications";
+// import {NodeSelect} from "compass-base/client/components/+nodes";
+import {apiBase, Namespace} from "@pskishere/piral-compass-api";
+
 
 interface NodeResourceLimit {
   zone: string;
@@ -98,7 +98,7 @@ export class NamespaceNodeRangeLimitDialog extends React.Component<Props> {
                       next={this.updateAnnotate}>
             <div className="node">
               <SubTitle title={`Annotate Node`}/>
-              <NodeSelect
+              {/* <NodeSelect
                 isMulti
                 value={this.nodes}
                 placeholder={`Node`}
@@ -108,7 +108,7 @@ export class NamespaceNodeRangeLimitDialog extends React.Component<Props> {
                   if (!opts) opts = [];
                   this.nodes.replace(unwrapNodes(opts));
                 }}
-              />
+              /> */}
             </div>
           </WizardStep>
         </Wizard>

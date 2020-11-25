@@ -5,7 +5,29 @@
   "keywords": [
     "pilet"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "@pskishere/piral-compass-ace-editor": "^0.0.102",
+    "@pskishere/piral-compass-api": "^0.0.102",
+    "@pskishere/piral-compass-badge": "^0.0.102",
+    "@pskishere/piral-compass-checkbox": "^0.0.102",
+    "@pskishere/piral-compass-confirm-dialog": "^0.0.102",
+    "@pskishere/piral-compass-dialog": "^0.0.102",
+    "@pskishere/piral-compass-drawer": "^0.0.102",
+    "@pskishere/piral-compass-input": "^0.0.102",
+    "@pskishere/piral-compass-kube-layout": "^0.0.102",
+    "@pskishere/piral-compass-menu": "^0.0.102",
+    "@pskishere/piral-compass-no-itms": "^0.0.102",
+    "@pskishere/piral-compass-notifications": "^0.0.102",
+    "@pskishere/piral-compass-scss": "^0.0.98",
+    "@pskishere/piral-compass-select": "^0.0.102",
+    "@pskishere/piral-compass-sidebar": "^0.0.102",
+    "@pskishere/piral-compass-spinner": "^0.0.102",
+    "@pskishere/piral-compass-stepper": "^0.0.102",
+    "@pskishere/piral-compass-sub-title": "^0.0.102",
+    "@pskishere/piral-compass-themes": "^0.0.102",
+    "@pskishere/piral-compass-utils": "^0.0.102",
+    "@pskishere/piral-compass-wizard": "^0.0.102"
+  },
   "devDependencies": {
     "@babel/preset-flow": "^7.12.1",
     "@dbeining/react-atom": "4.1.10",
@@ -15,17 +37,20 @@
     "@types/react-dom": "latest",
     "@types/react-router": "latest",
     "@types/react-router-dom": "latest",
-    "compass-base": "0.1.18",
     "compass-shell": "file:../../compass-shell/dist/emulator/compass-shell-1.0.2.tgz",
     "history": "4.10.1",
+    "mobx": "^5.15.7",
+    "mobx-react": "^5.4.4",
     "path-to-regexp": "3.2.0",
     "piral-cli": "^0.12.3",
+    "piral-cli-webpack": "0.12.3",
     "react": "16.14.0",
     "react-dom": "16.14.0",
     "react-router": "5.2.0",
     "react-router-dom": "5.2.0",
     "tslib": "1.14.1",
-    "typescript": "^3.9.7"
+    "typescript": "^3.9.7",
+    "webpackbar": "^5.0.0-3"
   },
   "peerDependencies": {
     "@dbeining/react-atom": "*",

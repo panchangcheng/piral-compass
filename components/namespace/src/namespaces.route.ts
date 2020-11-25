@@ -1,5 +1,5 @@
 import { RouteProps } from "react-router"
-import { buildURL } from "compass-base/client/navigation";
+import { buildURL } from "@pskishere/piral-compass-utils";
 
 export const namespacesRoute: RouteProps = {
   path: "/namespaces"

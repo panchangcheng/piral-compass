@@ -3,13 +3,12 @@ import "./add-namespace-dialog.scss";
 import React from "react";
 import { observable } from "mobx";
 import { observer } from "mobx-react";
-import { Dialog, DialogProps } from "compass-base/client/components/dialog";
-import { Wizard, WizardStep } from "compass-base/client/components/wizard";
+import { Dialog, DialogProps } from "@pskishere/piral-compass-dialog";
+import { Wizard, WizardStep } from "@pskishere/piral-compass-wizard";
 import { namespaceStore } from "./namespace.store";
-import { Namespace } from "compass-base/client/api/endpoints";
-import { Input } from "compass-base/client/components/input";
-import { systemName } from "compass-base/client/components/input/input.validators";
-import { Notifications } from "compass-base/client/components/notifications";
+import { Namespace } from "@pskishere/piral-compass-api";
+import { Input, systemName } from "@pskishere/piral-compass-input";
+import { Notifications } from "@pskishere/piral-compass-notifications";
 
 interface Props extends DialogProps {
   onSuccess?(ns: Namespace): void;

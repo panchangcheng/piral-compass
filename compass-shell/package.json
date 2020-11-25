@@ -8,10 +8,28 @@
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/lab": "^4.0.0-alpha.56",
-    "compass-base": "0.1.18",
+    "@pskishere/piral-compass-ace-editor": "^0.0.102",
+    "@pskishere/piral-compass-api": "0.0.102",
+    "@pskishere/piral-compass-badge": "^0.0.102",
+    "@pskishere/piral-compass-button": "^0.0.102",
+    "@pskishere/piral-compass-confirm-dialog": "^0.0.102",
+    "@pskishere/piral-compass-dialog": "^0.0.102",
+    "@pskishere/piral-compass-dock": "^0.0.102",
+    "@pskishere/piral-compass-draggable": "^0.0.102",
+    "@pskishere/piral-compass-error-boundary": "^0.0.102",
+    "@pskishere/piral-compass-icon": "^0.0.102",
+    "@pskishere/piral-compass-input": "^0.0.102",
+    "@pskishere/piral-compass-menu": "^0.0.102",
+    "@pskishere/piral-compass-notifications": "^0.0.102",
+    "@pskishere/piral-compass-scss": "^0.0.102",
+    "@pskishere/piral-compass-sidebar": "^0.0.98",
+    "@pskishere/piral-compass-spinner": "^0.0.102",
+    "@pskishere/piral-compass-sub-title": "^0.0.102",
+    "@pskishere/piral-compass-tabs": "^0.0.102",
+    "@pskishere/piral-compass-themes": "0.0.102",
+    "@pskishere/piral-compass-tooltip": "^0.0.102",
+    "mobx-react": "^5.4.4",
     "piral": "0.12.3",
-    "piral-compass-themes": "../basis/themes/piral-compass-themes-v0.0.1.tgz",
-    "piral-compass-utils": "../basis/utils/piral-compass-utils-v0.0.1.tgz",
     "piral-menu": "^0.12.3",
     "qs": "^6.9.4"
   },
@@ -29,7 +47,8 @@
     "scripts": {},
     "validators": {},
     "devDependencies": {
-      "compass-base": "0.1.18",
+      "mobx": "^5.15.7",
+      "mobx-react": "^5.4.4",
       "@babel/preset-flow": "^7.12.1"
     },
     "preScaffold": "",
@@ -46,29 +65,19 @@
     "@types/react-router": "latest",
     "@types/react-router-dom": "latest",
     "history": "4.10.1",
-    "path-to-regexp": "3.2.0",
     "piral-cli": "^0.12.3",
+    "piral-cli-webpack": "0.12.3",
     "react": "16.14.0",
     "react-dom": "16.14.0",
     "react-router": "5.2.0",
     "react-router-dom": "5.2.0",
     "tslib": "1.14.1",
     "typescript": "^3.9.7",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^3.11.0",
+    "webpackbar": "^5.0.0-3"
   },
   "piral": {
     "comment": "Keep this section to use the Piral CLI.",
     "name": "compass-shell"
-  },
-  "peerDependencies": {
-    "@dbeining/react-atom": "*",
-    "@libre/atom": "*",
-    "history": "*",
-    "path-to-regexp": "*",
-    "react": "*",
-    "react-dom": "*",
-    "react-router": "*",
-    "react-router-dom": "*",
-    "tslib": "*"
   }
 }

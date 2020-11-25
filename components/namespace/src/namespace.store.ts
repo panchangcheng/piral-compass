@@ -1,8 +1,7 @@
 import { action, observable, reaction } from "mobx";
-import { autobind, createStorage } from "compass-base/client/utils";
-import { KubeObjectStore } from "compass-base/client/kube-object.store";
-import { Namespace, namespacesApi } from "compass-base/client/api/endpoints";
-import { IQueryParams, navigation, setQueryParams } from "compass-base/client/navigation";
+import { autobind, createStorage } from "@pskishere/piral-compass-utils";
+import { Namespace, namespacesApi, KubeObjectStore } from "@pskishere/piral-compass-api";
+import { IQueryParams, navigation, setQueryParams } from "@pskishere/piral-compass-utils";
 
 @autobind()
 export class NamespaceStore extends KubeObjectStore<Namespace> {

@@ -1,9 +1,7 @@
 // Client-side config
 import {observable, when, action} from "mobx";
-import {autobind, interval} from "compass-base/client/utils";
-import {IConfig} from "compass-base/server/common/config";
-import {IClientVars} from "compass-base/server/config";
-import {configApi} from "compass-base/client/api/endpoints";
+import {autobind, interval} from "@pskishere/piral-compass-utils";
+import {IConfig, IClientVars, configApi} from "@pskishere/piral-compass-api";
 
 const {
   IS_PRODUCTION,

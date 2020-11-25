@@ -3,17 +3,16 @@ import store from 'store'
 import {observable} from "mobx";
 import {observer} from "mobx-react";
 import Alert from "@material-ui/lab/Alert";
-import {SubTitle} from 'compass-base/client/components/layout/sub-title'
-import {cssNames} from "compass-base/client/utils";
-import {systemName} from "compass-base/client/components/input/input.validators";
-import {configStore} from "../config.store";
-import {themeStore} from "compass-base/client/theme.store";
-import {Notifications} from "compass-base/client/components/notifications";
-import {crdStore} from 'compass-base/client/components/+custom-resources'
-import {Input} from 'compass-base/client/components/input'
-import {Button} from 'compass-base/client/components/button'
-import './login.scss'
 import {Paper, Slide} from "@material-ui/core";
+import {SubTitle} from '@pskishere/piral-compass-sub-title'
+import {cssNames} from "@pskishere/piral-compass-utils";
+import {configStore} from "@pskishere/piral-compass-api";
+import {themeStore} from "@pskishere/piral-compass-themes";
+// import {Notifications} from "compass-base/client/components/notifications";
+import {Input, systemName} from '@pskishere/piral-compass-input';
+import {Button} from '@pskishere/piral-compass-button';
+import './login.scss'
+
 
 interface Props {
   history?: any
@@ -34,7 +33,7 @@ export class LoginComponent extends React.Component<Props> {
 
   onFinish = () => {
     if (!this.username || !this.password) {
-      Notifications.error('Please enter account or password')
+      // Notifications.error('Please enter account or password')
       return
     }
     this.loading = true
@@ -51,8 +50,8 @@ export class LoginComponent extends React.Component<Props> {
         configStore.setConfig(response)
         store.set('u_config', response)
         console.log('configStore.config', configStore.config)
-        crdStore.loadAll()
-        Notifications.ok('Login Success')
+        // crdStore.loadAll()
+        // Notifications.ok('Login Success')
         this.loading = true
         setTimeout(() => {
           if (response.isClusterAdmin === true) {
@@ -68,7 +67,7 @@ export class LoginComponent extends React.Component<Props> {
     )
     .catch(error => {
       if (error && error.response) {
-        Notifications.error(error.response.data)
+        // Notifications.error(error.response.data)
       }
       this.loading = false
     })

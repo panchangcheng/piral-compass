@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../piral-compass-packages"
+		}
+	],
+	"settings": {}
+}

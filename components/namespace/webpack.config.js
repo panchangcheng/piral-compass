@@ -17,9 +17,9 @@ module.exports = function(compassConfig) {
   const HtmlWebpackPlugin = require('html-webpack-plugin');
 
   // const srcDir = path.resolve(process.cwd(), 'node_modules', 'compass-base', 'client');
-  const srcDir = './node_modules/compass-base/client';
+  // const srcDir = './node_modules/compass-base/client';
   // const sassCommonVarsFile = path.resolve(srcDir, 'components', 'vars.scss');
-  const sassCommonVarsFile = './components/vars.scss';
+  const sassCommonVarsFile = './node_modules/@pskishere/piral-compass-scss/vars.scss';
 
   const CLIENT_DIR = "client";
   const BUILD_DIR = "build";
@@ -105,9 +105,9 @@ module.exports = function(compassConfig) {
         options: {
           sourceMap: true,
           prependData: '@import "' + sassCommonVarsFile + '";',
-          sassOptions: {
-            includePaths: [srcDir]
-          },
+          // sassOptions: {
+          //   includePaths: [srcDir]
+          // },
         }
       },
     ]

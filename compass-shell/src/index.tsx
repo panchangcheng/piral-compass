@@ -1,13 +1,13 @@
+import "@pskishere/piral-compass-scss/app.scss";
+
 import * as React from 'react';
 import 'piral/polyfills';
+import { themeStore } from "@pskishere/piral-compass-themes"
 import { renderInstance } from 'piral';
 import { layout, errors } from './layout';
-import { themeStore } from "piral-compass-themes";
-import "compass-base/client/components/app.scss";
 import { render } from 'react-dom';
-import {LoginComponent} from './+login'
-import {configStore} from "compass-base/client/config.store";
-import {} from "piral-compass-dock"
+import { LoginComponent } from './+login';
+
 // change to your feed URL here (either using feed.piral.cloud or your own service)
 themeStore.setTheme('kontena-light');
 
@@ -20,14 +20,14 @@ if (location.pathname === '/login') {
   const piral = renderInstance({
     layout,
     errors,
-    // requestPilets() {
-    //   return new Promise((resolve) => setTimeout(() => resolve([]), 1000));
-    // }
     requestPilets() {
-      return fetch('http://localhost:9000/api/v1/pilet')
-      .then(res => res.json())
-      .then(res => res.items);
+      return new Promise((resolve) => setTimeout(() => resolve([]), 1000));
     }
+    // requestPilets() {
+    //   return fetch('http://localhost:9000/api/v1/pilet')
+    //   .then(res => res.json())
+    //   .then(res => res.items);
+    // }
   });
 }
 

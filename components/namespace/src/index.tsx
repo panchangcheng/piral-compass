@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { PiletApi } from 'compass-shell';
+import { SidebarNavItem } from "@pskishere/piral-compass-sidebar";
+import { Icon } from "@pskishere/piral-compass-icon";
 import { Namespaces } from './namespaces';
-import {SidebarNavItem} from "compass-base/client/components/layout/sidebar";
-import {Icon} from "compass-base/client/components/icon";
-import {NamespaceSelect} from "./namespace-select";
+import { NamespaceSelect } from "./namespace-select";
 
 export function setup(app: PiletApi) {
   app.registerMenu(() =>

@@ -3,13 +3,13 @@ import "./namespace-select.scss"
 import React from "react";
 import {computed} from "mobx";
 import {observer} from "mobx-react";
-import {Select, SelectOption, SelectProps} from "compass-base/client/components/select";
-import {cssNames, noop} from "compass-base/client/utils";
-import {Icon} from "compass-base/client/components/icon";
+import {Select, SelectOption, SelectProps} from "@pskishere/piral-compass-select";
+import {cssNames, noop} from "@pskishere/piral-compass-utils";
+import {Icon} from "@pskishere/piral-compass-icon";
+import {themeStore} from "@pskishere/piral-compass-themes";
+import {FilterIcon, FilterType} from "@pskishere/piral-compass-kube-layout";
 import {namespaceStore} from "./namespace.store";
-import {FilterIcon} from "compass-base/client/components/item-object-list/filter-icon";
-import {FilterType} from "compass-base/client/components/item-object-list/page-filters.store";
-import {themeStore} from "compass-base/client/theme.store";
+
 
 interface Props extends SelectProps {
   showIcons?: boolean;

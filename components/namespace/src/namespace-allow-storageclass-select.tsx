@@ -3,9 +3,9 @@ import "./namespace-allow-storageclass-select.scss";
 import React from "react";
 import { computed } from "mobx";
 import { observer } from "mobx-react";
-import { Select, SelectOption, SelectProps } from "compass-base/client/components/select";
-import { cssNames, noop } from "compass-base/client/utils";
-import { Icon } from "compass-base/client/components/icon";
+import { Select, SelectOption, SelectProps } from "@pskishere/piral-compass-select";
+import { cssNames, noop } from "@pskishere/piral-compass-utils";
+import { Icon } from "@pskishere/piral-compass-icon";
 import { namespaceStore } from "./namespace.store";
 
 interface Props extends SelectProps {

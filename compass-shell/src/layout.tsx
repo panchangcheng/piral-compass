@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {ComponentsState, ErrorComponentsState, SwitchErrorInfo} from 'piral';
 import {Link} from 'react-router-dom';
-import "compass-base/client/components/layout/main-layout.scss";
+import "./main-layout.scss";
 import {Layout} from "./main-layout";
 
 export const errors: Partial<ErrorComponentsState> = {
