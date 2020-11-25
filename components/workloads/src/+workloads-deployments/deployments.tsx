@@ -3,25 +3,23 @@ import "./deployments.scss"
 import React from "react";
 import {observer} from "mobx-react";
 import {RouteComponentProps} from "react-router";
-import {Deployment, deploymentApi} from "compass-base/client/api/endpoints";
-import {KubeObjectMenu, KubeObjectMenuProps} from "compass-base/client/components/kube-object";
-import {MenuItem} from "compass-base/client/components/menu";
-import {Icon} from "compass-base/client/components/icon";
+import {Link} from "react-router-dom";
+import Tooltip from "@material-ui/core/Tooltip";
+import {Deployment, deploymentApi, apiManager} from "@pskishere/piral-compass-api";
+import {cssNames, stopPropagation} from "@pskishere/piral-compass-utils";
+import {KubeObjectMenu, KubeObjectMenuProps, KubeObjectListLayout} from "@pskishere/piral-compass-kube-layout";
+import {MenuItem} from "@pskishere/piral-compass-menu";
+import {Icon} from "@pskishere/piral-compass-icon";
 import {DeploymentScaleDialog} from "./deployment-scale-dialog";
 import {deploymentStore} from "./deployments.store";
 import {replicaSetStore} from "../+workloads-replicasets/replicasets.store";
 import {podsStore} from "../+workloads-pods/pods.store";
 // import {nodesStore} from "compass-base/client/components/+nodes/nodes.store";
 // import {eventStore} from "compass-base/client/components/+events/event.store";
-import {KubeObjectListLayout} from "compass-base/client/components/kube-object";
 import {IDeploymentsRouteParams} from "../+workloads";
-import {cssNames, stopPropagation} from "compass-base/client/utils";
 import kebabCase from "lodash/kebabCase";
 import orderBy from "lodash/orderBy";
 import {KubeEventIcon} from "compass-base/client/components/+events/kube-event-icon";
-import {apiManager} from "compass-base/client/api/api-manager";
-import {Link} from "react-router-dom";
-import Tooltip from "@material-ui/core/Tooltip";
 
 import {PageComponentProps} from "compass-shell";
 
