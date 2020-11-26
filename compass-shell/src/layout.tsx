@@ -25,7 +25,6 @@ export const layout: Partial<ComponentsState> = {
   ),
   Layout: Layout,
   MenuContainer: ({children}) => {
-    console.log("menu", children);
     return (
       <>
         {children}

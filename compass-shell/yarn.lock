@@ -999,27 +999,27 @@
     prop-types "^15.7.2"
     react-is "^16.8.0"
 
-"@pskishere/piral-compass-ace-editor@^0.0.102":
-  version "0.0.102"
-  resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-ace-editor/0.0.102/20c49c3ab7358cce7c58755f53eae9eb2e2ebcace8c4ea2abecdb412f237e7ce#33e66f1200461a7d1c6ace5d96f42f6c9322232e"
-  integrity sha512-3/38uorKX/fjBy8MFXLZC0GhzB5VBH3qzbFdREt538iS3A7EtDLJ8ItkDRoTSapSnG+fwdAWmclt74CFUoEukQ==
+"@pskishere/piral-compass-ace-editor@^0.0.106":
+  version "0.0.106"
+  resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-ace-editor/0.0.106/8e2315466c962bc86a60863d0b2fc5bc2f96ba5a88f290745674caf91191ccc3#6da5e2e440ec36a69736e31c3c41ff7a2c2b498b"
+  integrity sha512-RwA3ASjze9MVz8kPbL8kvwT0LIV+Bc9HCHZf96s4P5SielWhRZRe8xV/PlCovsdwqdgQkSesEKISZSz/ho6xJg==
   dependencies:
-    "@pskishere/piral-compass-themes" "^0.0.102"
-    "@pskishere/piral-compass-utils" "^0.0.102"
+    "@pskishere/piral-compass-themes" "^0.0.106"
+    "@pskishere/piral-compass-utils" "^0.0.106"
     "@types/react" "^16.9.56"
     ace-builds "^1.4.12"
 
-"@pskishere/piral-compass-animate@^0.0.102":
-  version "0.0.102"
-  resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-animate/0.0.102/aa3a2d0f63c32e17a43f86182ed460c79152aba8e95f58fc72534a326b07b9ba#4767f8951231169724d9013c8d37f591b7b7c700"
-  integrity sha512-pyT7H77GxkqJSHJ3Mju2bpEBgpn7vrTanj99V20RkV00armSyjZT7mML4jpt3C0OZysHHLaXXml/tsKd67I4VA==
+"@pskishere/piral-compass-animate@^0.0.106":
+  version "0.0.106"
+  resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-animate/0.0.106/c847dad64c01b680064c535ae7736e3c63f823b399ab7002c23226ac996f80fc#2c087e1ae821a397b7d9e0bc69bf682ff8609a42"
+  integrity sha512-aATmHJgW3u4XoDhrZbz3e1u4k3MI+kc2DN348484dz+KXqHfx+HaxYry9eotZDmyb9RW2WxgNbpZPNjA0NdVxw==
   dependencies:
-    "@pskishere/piral-compass-utils" "^0.0.102"
+    "@pskishere/piral-compass-utils" "^0.0.106"
 
-"@pskishere/piral-compass-api@0.0.102", "@pskishere/piral-compass-api@^0.0.102":
-  version "0.0.102"
-  resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-api/0.0.102/593a53a9c1d7328428664115e60c61d0a924032eb68c41734c54817a944e40cd#025f0d6e2d9d624dbe53661f55702fe7e0617fa3"
-  integrity sha512-PxETyS4HLG2BXWb5/xKel6482KbiRwnLgod6SumXpcEcv2bSdj7NLJbEm5J07xpgkB5eW+xawNsOSV34J8vAoQ==
+"@pskishere/piral-compass-api@0.0.106", "@pskishere/piral-compass-api@^0.0.106":
+  version "0.0.106"
+  resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-api/0.0.106/46e35e3826f0ff461d7d454f912e19d0d34756e5e4ced59fc1f8c6febd2c9a9d#b0a8efede0c7b828b5ef74a4d8415624d424354d"
+  integrity sha512-EfuFtvVewhx4aJMCCKyGWjx88g1gZG0623bbt+h1Bjg0z+XKRi3pTuT6NKqttFbMFyQttll9bWBIuxWbwmvyjw==
   dependencies:
     "@types/node" "^14.14.7"
     "@types/sockjs-client" "^1.1.1"
@@ -1033,150 +1033,150 @@
     typescript "^4.1.2"
     urijs "^1.19.2"
 
-"@pskishere/piral-compass-badge@^0.0.102":
-  version "0.0.102"
-  resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-badge/0.0.102/a4dd82e89e43b440bf286b444e668f9f74b005fa2b5ca9bbe9c14345c1cb9728#316e06f6f6d3c729a06b6838202c8ef2da418405"
-  integrity sha512-UWBvrR7P0LWEGbzyuiFyEfTdcCQS4Vo4RU0Zr5/V7MsHyUZ9phdvYhk1fVAypc73cPYlICZGHeio5Z30y+XqBQ==
+"@pskishere/piral-compass-badge@^0.0.106":
+  version "0.0.106"
+  resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-badge/0.0.106/7dbdd68c2306ea6cc38ba6e348e846cc8115a1a2b458286240582813712ffb4c#7e036ea7f266ced9451c76cd44085476297883f4"
+  integrity sha512-erIui54VwJG5naj7yJ1G7NRu2Oxlt9rn+zG23ijFA3fzBECmdMYcKpWaAGn5bTRkwtmWGhStNtPnKTqEhifbbw==
   dependencies:
-    "@pskishere/piral-compass-tooltip" "^0.0.102"
-    "@pskishere/piral-compass-utils" "^0.0.102"
+    "@pskishere/piral-compass-tooltip" "^0.0.106"
+    "@pskishere/piral-compass-utils" "^0.0.106"
 
-"@pskishere/piral-compass-button@^0.0.102":
-  version "0.0.102"
-  resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-button/0.0.102/ea5530268f1d279f7e34b97891e61d80fa85d950fd852fb2748a3391df5bad8e#8de78bf3a1f7ebb5f868627536c29a0c05ce6e1d"
-  integrity sha512-guNHr3yV5j9oJin6Ao0DBDM4XoP7ruKsl/qiirQgOL4MgTBxSZ8YHVVkUOy5GfKItm5IWt84MMP03CQXyIsA1Q==
+"@pskishere/piral-compass-button@^0.0.106":
+  version "0.0.106"
+  resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-button/0.0.106/b99abe319df120c406e8504e966c692de531d7f81ba61a8289ae7d9bd3dd7abb#6aaf253f056768009b85d24baa1e92cd8c13bda4"
+  integrity sha512-5Z+qUZEliwgq6E8OacKcPw6H0GTqbaj/XZt7XQ4J2rjzYPF1DJF+Ne72HAcc2Snx601sRWXAzdaDAG2vuntFhQ==
   dependencies:
-    "@pskishere/piral-compass-tooltip" "^0.0.102"
-    "@pskishere/piral-compass-utils" "^0.0.102"
+    "@pskishere/piral-compass-tooltip" "^0.0.106"
+    "@pskishere/piral-compass-utils" "^0.0.106"
 
-"@pskishere/piral-compass-confirm-dialog@^0.0.102":
-  version "0.0.102"
-  resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-confirm-dialog/0.0.102/f9b860b8bdeeace5d12ed97c27e3c40ac1d3a548a8d47e0c7d721e87fb88e85f#9b7fc410af415764bb093218af82489a0edbe706"
-  integrity sha512-j/96BoxF/ifhZsK/k2F7MuAcJN+6Bi5wZLbCqJqnV2f8RPMaZImMV26w3Qe+bMMbeiMoYHgCjP/aB/gy6gS7Nw==
+"@pskishere/piral-compass-confirm-dialog@^0.0.106":
+  version "0.0.106"
+  resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-confirm-dialog/0.0.106/25c8d855cc98a37b2f119983655936ca898f1770fc377e15e983151186e2b185#1e110c10d851bf7d53bbf0fdd0577f5ad98167c3"
+  integrity sha512-Hs8NoYW4naD/wponz3v/6Ea/S5fH6E2nyaiLInEMpvLimqjZcDac5gJEXC2hb8ZgRkZg7kUi56zys1oPTSiOHA==
   dependencies:
-    "@pskishere/piral-compass-button" "^0.0.102"
-    "@pskishere/piral-compass-icon" "^0.0.102"
-    "@pskishere/piral-compass-utils" "^0.0.102"
+    "@pskishere/piral-compass-button" "^0.0.106"
+    "@pskishere/piral-compass-icon" "^0.0.106"
+    "@pskishere/piral-compass-utils" "^0.0.106"
 
-"@pskishere/piral-compass-dialog@^0.0.102":
-  version "0.0.102"
-  resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-dialog/0.0.102/d4e5a5507add401ec285a86a780b5c87d074da257b9a39a8eccea80426f97a5d#e6e1575e1c2650604cf5935f69802e9041904aae"
-  integrity sha512-ICV6u+3ItH9GZrY4OpN1W7Y7W6ivmX5XGdafO7cbLOCO2pPH24aK17hZrb+ITJ2oLYuT2lqWLvGFT+dOmYQ2Sg==
+"@pskishere/piral-compass-dialog@^0.0.106":
+  version "0.0.106"
+  resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-dialog/0.0.106/4ce4492ef25b3b75f3b2dac23ea1d67c9ae9b520acc967485fd0536e312c9974#5907d01f8d740ff48e149694bcff98d271e62ca0"
+  integrity sha512-eHRQ2Z/teXNTAq3V8U89K0cPBpEmF7GhQkCeuek59hK7AbuIEdfsFVmRF27g52XNyttSJ5zeCC+0qUBqZgqNCA==
   dependencies:
-    "@pskishere/piral-compass-animate" "^0.0.102"
-    "@pskishere/piral-compass-button" "^0.0.102"
-    "@pskishere/piral-compass-icon" "^0.0.102"
-    "@pskishere/piral-compass-utils" "^0.0.102"
+    "@pskishere/piral-compass-animate" "^0.0.106"
+    "@pskishere/piral-compass-button" "^0.0.106"
+    "@pskishere/piral-compass-icon" "^0.0.106"
+    "@pskishere/piral-compass-utils" "^0.0.106"
 
-"@pskishere/piral-compass-dock@^0.0.102":
-  version "0.0.102"
-  resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-dock/0.0.102/be102e10734550f68e8bc75b20928a6ec1756e47f28dbb5b051c6612a48e179a#ffdd0fe056233728857af3bf024aedbc7e1c531b"
-  integrity sha512-5nz97EiZ/KS3Zl/WOdmFCSfGlAaGmal4xF6Yl90NFRbkul7on37ql/DFDKWOUDgzCqKZ0yE8WdXrfygQtcLhQg==
+"@pskishere/piral-compass-dock@^0.0.106":
+  version "0.0.106"
+  resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-dock/0.0.106/c3ce8ddfd023854f575aba0eccdaa4e8cd133cf6c9191a6169b9bdbc4ae91d7b#a0ff5f54503831bab8b188bef6bdc0ec77ceaa45"
+  integrity sha512-buhDlIJtzk5R7sgJjlNEEkUtC89hIV1Q6EOa/oSqETiwHSiDJTXfkyqRF8mNPS8Nybht8EyxSleZmeNiM+IocA==
   dependencies:
     xterm "^4.9.0"
     xterm-addon-fit "^0.4.0"
     xterm-addon-serialize "^0.4.0"
     xterm-addon-web-links "^0.4.0"
 
-"@pskishere/piral-compass-draggable@^0.0.102":
-  version "0.0.102"
-  resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-draggable/0.0.102/0a78c7a5f40436f07c64fce58dffb14936e3c53bca396768aee41f58d07d66f3#7af150a1dc77fd27a485149f4427598956b4af6d"
-  integrity sha512-AH2c0jIZ3xjTDCh70cBRM/ZcT8bsSlvdkBWZlzvC0UTEbT/iXvQRmDXsdWXi49VIp/g0uugt4mhNmvTlaJEmdw==
+"@pskishere/piral-compass-draggable@^0.0.106":
+  version "0.0.106"
+  resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-draggable/0.0.106/d8fdf16d7a905d607d01fd118922d79beee09d631759e4c2eb5f44ea38f1c35b#03728bfc07325a83e1eea67522d97f915dc563a9"
+  integrity sha512-PVFJXj3tkTfOjEDca6EKWOsNsnm+K/1PZLlYSUSo+loVCeasGFKPP7zH/Cmt7Z5+rQBf4iWxrmb6i48wa4WvIA==
   dependencies:
-    "@pskishere/piral-compass-utils" "^0.0.102"
+    "@pskishere/piral-compass-utils" "^0.0.106"
 
-"@pskishere/piral-compass-error-boundary@^0.0.102":
-  version "0.0.102"
-  resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-error-boundary/0.0.102/69eefb0848c392117416c6c988ce1547995f3c164460c05c30fbd05bc18bbb4e#9bfe8dcd419997e85d0d5ca200b2f6fbf59bce65"
-  integrity sha512-eWby1MHlkzfnANmGtUU0qDqb9rDrLK4IAR+EUAoDcMAl+UkPPMWl8fPuP8t2fU3D1ZO2UFgEWTtIeg7/zWibZg==
+"@pskishere/piral-compass-error-boundary@^0.0.106":
+  version "0.0.106"
+  resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-error-boundary/0.0.106/d099e2e0efdcfb85c00e4412af6fac48db08213a6bdd62dece2c985719fccae7#c19ee867f2770f9b413cd2ea5b716b8984e90a6d"
+  integrity sha512-tHvKcNnp6KVc5QZV/xFX4yjkCMENpOm+5vKKYykyu0KD+6WupowBq+CioWBUpEK/nFHy13U3yEDdmlweAHF62Q==
   dependencies:
     typescript "^4.1.2"
 
-"@pskishere/piral-compass-icon@^0.0.102":
-  version "0.0.102"
-  resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-icon/0.0.102/0baa2e40bdfbda7827507b757bbacc277ba30495a4be88f1bbe91a544ac7796d#580b7d220325ba8afd1235b59f94ec7fabe5342f"
-  integrity sha512-rUg5VeaK85LXvw5Qfxx+oC/PAedJTxKfZqmNcP28u4KO4f97FBjGz9oJXiI2oXeRyJUYgsZjs/sAMAlJ2gB/qQ==
+"@pskishere/piral-compass-icon@^0.0.106":
+  version "0.0.106"
+  resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-icon/0.0.106/4d7d00f2df0437f068a73eb99e9cedd7354a38c9bf05ba7da9e460107691569a#493c77c1bc34ed4ebc4300416d653167bf8b39ea"
+  integrity sha512-c8V9FoL2mh9wcTJrd5KOiUqSOM89O6GSXOAV3K/fh56imsW4zgvaBrieHWVxqtH9rLZGj69zZ5UU8ZAqpLV78A==
   dependencies:
-    "@pskishere/piral-compass-tooltip" "^0.0.102"
-    "@pskishere/piral-compass-utils" "^0.0.102"
+    "@pskishere/piral-compass-tooltip" "^0.0.106"
+    "@pskishere/piral-compass-utils" "^0.0.106"
     raw-loader "^4.0.2"
 
-"@pskishere/piral-compass-input@^0.0.102":
-  version "0.0.102"
-  resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-input/0.0.102/279292f05fb40289a265748f947b794dc707d517da5d9a8133bb0839b19ad633#db057e02663e15f22f1609c8aa34c4294ae4509d"
-  integrity sha512-3FtCJY0FAuFH6nBMP/FVghqVrZtZdQu6HwARvucOWBxa7sGsdf9qWvwb1uFQFYmsBUSFcKkTmeXxFKx9xG3GWQ==
+"@pskishere/piral-compass-input@^0.0.106":
+  version "0.0.106"
+  resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-input/0.0.106/6ed7f7f35be788fb6caca53beb6225d7b277c1a3af9a7b1f73e817e03b8f5fb5#67ef31763a9bc741c43e4a6d698d14e8fdc333d4"
+  integrity sha512-jPV/+7I6McQnKdmXTckkeJdaeU49/iboJbTILXF902st0j+ma0gbgSTtTUIprY+c+6MOh+N6s7Km/iyMBZA9Og==
   dependencies:
-    "@pskishere/piral-compass-icon" "^0.0.102"
-    "@pskishere/piral-compass-utils" "^0.0.102"
+    "@pskishere/piral-compass-icon" "^0.0.106"
+    "@pskishere/piral-compass-utils" "^0.0.106"
 
-"@pskishere/piral-compass-menu@^0.0.102":
-  version "0.0.102"
-  resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-menu/0.0.102/9e3d3feff6bf2a512d40f2524ebb3b819bdc41fe0d4f59905970c9aefb517444#11fef14d31a7efafc80c8321a5cac1e77f27ecfd"
-  integrity sha512-ff7psRdVyWU9BU0txMuPpuHgAhQRp6OZhW1tRWdWFgg8vxAR1ZcFE+O1vFrmCquaP1Ymf7xy/+Owjg/Atfx0rg==
+"@pskishere/piral-compass-menu@^0.0.106":
+  version "0.0.106"
+  resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-menu/0.0.106/a1f93551217a8aa602472c2a10fdd55fec0bc3f08f116afe1a82e979aaa16563#185e85110f68d1d4a5998f772d0cd48ef8720fda"
+  integrity sha512-3L+j/3BnkrmOJP5fwD3aECOS4+QhAu1oGIOC8bNQMKOHTZYLBQD/PsENw0LD6WxlENHKiHOyv7Ov2Jz7IsLHTQ==
 
-"@pskishere/piral-compass-notifications@^0.0.102":
-  version "0.0.102"
-  resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-notifications/0.0.102/aac4f006d0bd2f5a99b107d105246ae3b8ad6821e8f45529664cb5c715d83671#089adbda94a6f4c2cfdf56c051d6856d327bdbd7"
-  integrity sha512-ZIkmoWgO+C7lWlmymP7VFO2HmN9nFB0GFz//bEHKJXZ2tBEPuZ1+HS6KL9mL6FRMK2ZeM0jAD0EaHeQ9+ZxLDw==
+"@pskishere/piral-compass-notifications@^0.0.106":
+  version "0.0.106"
+  resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-notifications/0.0.106/87496b306b34b75b3acb4591c3ec3654a75681a6f43acbb29de01861386f607f#f8b351211a8205348d48de854918723d87972297"
+  integrity sha512-q3yzX9ZWu/9kfCAOmvMlw6q33vsP8lMFME9FZLOTG9ehqq2dKUEB+3m4cUXR4Wm761VwOFRh1NQm2qJaYHWTWg==
   dependencies:
-    "@pskishere/piral-compass-animate" "^0.0.102"
-    "@pskishere/piral-compass-api" "^0.0.102"
-    "@pskishere/piral-compass-icon" "^0.0.102"
-    "@pskishere/piral-compass-utils" "^0.0.102"
+    "@pskishere/piral-compass-animate" "^0.0.106"
+    "@pskishere/piral-compass-api" "^0.0.106"
+    "@pskishere/piral-compass-icon" "^0.0.106"
+    "@pskishere/piral-compass-utils" "^0.0.106"
 
-"@pskishere/piral-compass-scss@^0.0.102":
-  version "0.0.102"
-  resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-scss/0.0.102/1cc422a1673d5d9f0ca3b41977364400e8006e6eb174a0b8e48855dc4f0a4874#fa3fbfbe511fe9afa0acbf32d3772bf18ec4e1b3"
-  integrity sha512-BN1rHggYNae5IJsJQcJSuMQdfGtsmuDsCajDm3PEFbTwlyTHX8QJ5VZ0KWPsexuaSM9N7Tw8EGiYucCvFsF+Mw==
+"@pskishere/piral-compass-scss@^0.0.106":
+  version "0.0.106"
+  resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-scss/0.0.106/0feb19eb3fc0d8776fa63fb654d8e432f3ade14602da55a9271f294c18fc313f#fb0679656d0107ebf39d9fd13ca5449dcd11df84"
+  integrity sha512-cjOUovkMz0ywQP8+wRAGiH1iutixQ71A10CdNwJwlxBP3tiIb7xzMirMCYfx9kChos9owGurZ63PY740y/ctsg==
 
 "@pskishere/piral-compass-sidebar@^0.0.98":
   version "0.0.98"
   resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-sidebar/0.0.98/616d4cbe65d5a1f041bd522a4d092e7196c77980fc847ce6f5d65cec9f1cfc0d#e1a1da0dce61f9a1a8a53d9d4c20d934a65e26ac"
   integrity sha512-E8X8M9jbXCD7p2N+G1Z8WYj/Upg2/fp5jLad/LZKJhWlhntD69e+9GRbX5B55hXrKwiJfbDblLzdpJxoifE66Q==
 
-"@pskishere/piral-compass-spinner@^0.0.102":
-  version "0.0.102"
-  resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-spinner/0.0.102/adf77f4e3331a35790353f5f70c13f0b1b6033f60e53a1ab01308f40c7798214#eff739bc34838aaf59dff6a79c25f9310b00d7c2"
-  integrity sha512-gLSPsbteG7im8YzeSE1/HopHDFP49S0MO8T7cBGnmPOtr3a+7+ZRuur0+3Lv4PygQjhPr8qDicTp+9ii9w1slw==
+"@pskishere/piral-compass-spinner@^0.0.106":
+  version "0.0.106"
+  resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-spinner/0.0.106/61d12a82e696910ee64365cacdebe8579deff258d5a68a90e87cad46f66bdfa5#57b328e95d3609e8fc3b696de9d8905eb5698f60"
+  integrity sha512-vg9/a+p7VeTqiakjGa3kA8f5mm7HGSdmY6v9EitPiNjrWEt2kifMW/ICcKtaBkUkXhtUXIoGaDJYnzmGcslBVA==
   dependencies:
-    "@pskishere/piral-compass-utils" "^0.0.102"
+    "@pskishere/piral-compass-utils" "^0.0.106"
 
-"@pskishere/piral-compass-sub-title@^0.0.102":
-  version "0.0.102"
-  resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-sub-title/0.0.102/9499c50d37c490a67081e333dde3456d2fd424e73f6e56e971e070cd39ee793a#ac7b87bc73f5863a82bbe37d7496c6f281fc80fa"
-  integrity sha512-e5HWhN/k/ZCbXnby6RxG3e52C7mA0l+op/wFTImdXPJWsD87f70gAx6wRDXVRI1HlaxtywInmrRcFLMRzdZdDA==
+"@pskishere/piral-compass-sub-title@^0.0.106":
+  version "0.0.106"
+  resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-sub-title/0.0.106/9d490721bd23a757b039e59d9a75874fe3ed1c73927cdd18cb808a38ed130ddc#098a3c7da31d9af7f0b609a7bf43a568ad87d6b6"
+  integrity sha512-lp8Ny+p6+v8Rgch5FQG4Gwo0mIhs9swJz+76ggKsBwpZDbPB45EG4JuROeDDUmVonu7oWNlIu43SLt0kk0xGvw==
   dependencies:
     typescript "^4.1.2"
 
-"@pskishere/piral-compass-tabs@^0.0.102":
-  version "0.0.102"
-  resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-tabs/0.0.102/a0f0929f53254fea2578f1f63ea0fa3a8b5f49d5694e6af763faf922ec2a66c3#c3abc8d8040159544260c611223d2bcf21bd4e6c"
-  integrity sha512-PB1wphFiziO2nseDIKLt+X/ABc0hvjyOt9KN5AJ/K4fJWEdRAaMPxW/ApKvChviLbeB53zL5RUKvlvitcBBkPg==
+"@pskishere/piral-compass-tabs@^0.0.106":
+  version "0.0.106"
+  resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-tabs/0.0.106/eea38353d80e38e5ebb0eab11254f370582b033757fa25cbf5b799cd7f793d62#591a7a439e0bdb42e1907aea643f7f8e8af5f71c"
+  integrity sha512-Ztc4TOAkLUUpbQJw0cYVY+lFNbubEwDsgcbV05GCvp4y7SU0rFIz7apTWdRWgw/YoMlgjIOkRS0nAAZiXS9W9g==
 
-"@pskishere/piral-compass-themes@0.0.102", "@pskishere/piral-compass-themes@^0.0.102":
-  version "0.0.102"
-  resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-themes/0.0.102/73fbc0f7c38c4d9f4d924b0c554a16f538aecebf045dbebb8eb8c119e7273318#da7fad026015ada7238c770bab56668b3b9cfe6f"
-  integrity sha512-gPw4PEvzOzegheP7u5ipDz8JLc+cwK5Mk+PNpfjprarEiGKF1vc6IOkdWtATCOcqSVaGOtR5Kgkmh0UVNICcCA==
+"@pskishere/piral-compass-themes@0.0.106", "@pskishere/piral-compass-themes@^0.0.106":
+  version "0.0.106"
+  resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-themes/0.0.106/c21c4d0b89b41e4e243ce180aa66944e49a4e3115cc0132c309dc746753927b6#98fbea50c8c0673aa61d2b3753398c52cfc25cd5"
+  integrity sha512-myPeSQGwnhdpl1CYZwwTPoUPtOXZS89qrUBw1sRgb29RmBS97B/LyDkho4QtQkg/EO6W4z9Yu4t84PBraEV93A==
   dependencies:
-    "@pskishere/piral-compass-utils" "^0.0.102"
+    "@pskishere/piral-compass-utils" "^0.0.106"
     flex.box "^3.4.4"
     include-media "^1.4.9"
     tslib "^2.0.3"
 
-"@pskishere/piral-compass-tooltip@^0.0.102":
-  version "0.0.102"
-  resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-tooltip/0.0.102/5d3569893b51f336c0f59e8d3d9de7fc8565cd1bf4e34b7a53d1539ae216b026#925edb6cc20ac1f11e599324748164f470896ab7"
-  integrity sha512-eyz7zNMo2GMV5gNtGt2xWgccbSxX0oqQjI5TrEqvRPfaBt+d5IwP7oxp5lFMRBHDubnDI2QsEHKjpwAGVdx3kw==
+"@pskishere/piral-compass-tooltip@^0.0.106":
+  version "0.0.106"
+  resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-tooltip/0.0.106/2a10472ef27c7c425771132278e5a3fd6065e6233a666076fa3fc3564596af38#aba92bc3160b83885b477c29cda7b13a327adb43"
+  integrity sha512-KBBjZTVLeJbhcsEEtW0xelDq1wjJLmZWBEGrvfjCty6M8b99Sonsw9WRr2tb3X5mYB/N9e/fpO/zkEk7irt7Qg==
   dependencies:
-    "@pskishere/piral-compass-animate" "^0.0.102"
-    "@pskishere/piral-compass-utils" "^0.0.102"
+    "@pskishere/piral-compass-animate" "^0.0.106"
+    "@pskishere/piral-compass-utils" "^0.0.106"
     hoist-non-react-statics "^3.3.2"
     react-dom "^17.0.1"
 
-"@pskishere/piral-compass-utils@^0.0.102":
-  version "0.0.102"
-  resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-utils/0.0.102/40c22c212e114b8d38562688660b40f3413c882f9043c9f0635a17a574a38c36#b2fc350efbcce883d2bd443ef672e10d300b453a"
-  integrity sha512-+9NMAHANJWbUl4KkboZEM+29DFTW4DR0mbINhoO6G9b5g/QZLqWAYYCH9a+OvyXyg8rD3nidS61kHP5IHtSlRg==
+"@pskishere/piral-compass-utils@^0.0.106":
+  version "0.0.106"
+  resolved "https://npm.pkg.github.com/download/@pskishere/piral-compass-utils/0.0.106/b502f7a5916b236a32dc7382573a8f4df6b4a7dc64e6dd7d7bc84192b39464a3#dcc200aa085bf9bc03e1f0259c363899b0438fab"
+  integrity sha512-rOIV+31X4HSPEWn3e5cXGP/V7b42acrhNxJIY6OJTRXfqTKPbS7t3BhmkdiWCVpAOD+7clfQaJx8wU6+EEum4w==
   dependencies:
     crypto-js "^4.0.0"
     lodash "^4.17.20"
